@@ -12,7 +12,10 @@ const AboutPage = () => {
           <SideBar />
         </Box>
         <Box sx={{ width: "75%" }}>
-          <Typography variant="h2" sx={{ color: "#fff", fontSize: "4rem" }}>
+          <Typography
+            variant="h2"
+            sx={{ color: "#fff", fontSize: "3rem", width: "65%" }}
+          >
             THE NIGERIAN NAVY CENTRAL COMMAND
           </Typography>
           <Typography

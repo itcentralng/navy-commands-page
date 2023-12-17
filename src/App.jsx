@@ -6,6 +6,8 @@ import { Box } from "@mui/material";
 import backgroundImage from "./assets/BackgroundImg.svg";
 import SideBar from "./components/SideBar";
 import AboutPage from "./pages/AboutPage";
+import Objectives from "./pages/Objectives";
+import Gallery from "./pages/Gallery";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
       <Routes location={location} key={location.pathname}>
         <Route index element={<HeroPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/objectives" element={<Objectives />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </Box>
   );

@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import navylogo from "../assets/navylogo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -25,7 +26,9 @@ const Header = () => {
             fontFamily: "'Lato', sans-serif",
           }}
         >
-          NAVY COMMANDS
+          <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
+            NAVY COMMANDS
+          </Link>
         </Typography>
         <img src={navylogo} alt="" style={{ width: "3.5rem" }} />
       </Box>

@@ -40,7 +40,10 @@ const SideBar = () => {
               console.log(item.id);
             }}
           >
-            <Link to={`/${item.pageLink}`} style={{ textDecoration: "none" }}>
+            <Link
+              to={`/${item.pageLink}`}
+              style={{ textDecoration: "none", width: "100%", height: "100%" }}
+            >
               <img src={item.image} alt="" style={{ width: "2.5rem" }} />
               <Typography
                 variant="body2"
