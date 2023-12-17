@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import SideBar from "../components/SideBar";
+import Transition from "../components/transition";
 
 const Objectives = () => {
   return (
@@ -71,4 +72,4 @@ const objectivesList = [
   },
 ];
 
-export default Objectives;
+export default Transition(Objectives);

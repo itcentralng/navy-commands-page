@@ -1,74 +1,90 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
+import { Box } from "@mui/material";
 import SideBar from "../components/SideBar";
+import Transition from "../components/transition";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import gallery1 from "../assets/gallery1.svg";
+import gallery2 from "../assets/gallery2.svg";
+import gallery3 from "../assets/gallery3.svg";
+import gallery4 from "../assets/gallery4.svg";
+import gallery5 from "../assets/gallery5.svg";
+import "@splidejs/react-splide/css";
 
 const Gallery = () => {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", width: "90%" }}
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "90%",
+          alignItems: "center",
+        }}
       >
         <Box>
           <SideBar />
         </Box>
         <Box sx={{ width: "75%" }}>
-          <Typography
-            variant="h2"
-            sx={{ color: "#fff", fontSize: "3rem", marginBottom: "1em" }}
+          <Splide
+            options={{
+              type: "loop",
+              autoplay: true,
+              pauseOnHover: false,
+              resetProgress: false,
+            }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+            }}
           >
-            BENEFITS OF THE NIGERIAN NAVY CENTRAL COMMAND
-          </Typography>
-          {objectivesList.map((item) => (
-            <Typography
-              key={item.id}
-              variant="body2"
-              sx={{
-                color: "#fff",
-                fontSize: "1.2rem",
-                marginBottom: "1.2em",
-              }}
-            >
-              {item.listItem}
-            </Typography>
-          ))}
+            {splideImageList.map((item) => (
+              <SplideSlide
+                key={item.id}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <img src={item.imageItem} alt="" style={{ width: "50%" }} />
+              </SplideSlide>
+            ))}
+          </Splide>
+          <Box
+            sx={{ display: "flex", marginTop: "2em", justifyContent: "center" }}
+          >
+            {imageList.map((item) => (
+              <img
+                key={item.id}
+                src={item.image}
+                alt=""
+                style={{ width: "5.5em" }}
+              />
+            ))}
+          </Box>
         </Box>
       </Box>
     </Box>
   );
 };
 
-const objectivesList = [
-  {
-    id: 1,
-    listItem: `1 - Enhancement of more robust employment and deployment of vessels, personnel and 
-      material to effectively police and protect the numerous rigs, platforms, oil installations, creeks
-       and adjoining rivers in the AOR of CNC.`,
-  },
-  {
-    id: 2,
-    listItem: `2 - Facilitation of the integration and employment of land, maritime, air and special operations 
-      forces to gain and maintain control of the creeks, inland water ways, coastal and the high seas in the AOR of CNC..`,
-  },
-  {
-    id: 3,
-    listItem: `3 - Enhancement of NN capability at detecting, intercepting and interdicting of hostile actions or acts that
-       tends to undermine security and legitimate economic activities in the AOR of CNC.`,
-  },
-  {
-    id: 4,
-    listItem: `4 - Increment in aid to civil authority through IS operations, humanitarian relief, Search and Rescue (SAR) 
-      amongst others in the AOR of CNC.`,
-  },
-  {
-    id: 5,
-    listItem: `5 - Enhancement of confidence among citizens of the area in government’s efforts at creating a secured 
-      environment in the AOR of CNC.`,
-  },
-  {
-    id: 6,
-    listItem: `6 - Enhancement of the efforts at elimination of militancy, illegal bunkering, attacks on oil facilities 
-      and other illegal activities in the AOR of CNC.`,
-  },
+const splideImageList = [
+  { id: 1, imageItem: gallery1 },
+  { id: 1, imageItem: gallery2 },
+  { id: 1, imageItem: gallery3 },
 ];
 
-export default Gallery;
+const imageList = [
+  { id: 1, image: gallery1 },
+  { id: 2, image: gallery2 },
+  { id: 3, image: gallery3 },
+  { id: 4, image: gallery4 },
+  { id: 5, image: gallery5 },
+  { id: 6, image: gallery1 },
+  { id: 7, image: gallery2 },
+  { id: 8, image: gallery3 },
+  { id: 9, image: gallery4 },
+  { id: 10, image: gallery5 },
+];
+
+export default Transition(Gallery);

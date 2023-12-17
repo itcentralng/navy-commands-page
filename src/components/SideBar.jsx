@@ -14,35 +14,35 @@ const SideBar = () => {
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Box sx={{ width: "90%" }}>
         {buttonItem.map((item) => (
-          <Button
-            disableRipple
+          <Link
+            to={`/${item.pageLink}`}
+            style={{ textDecoration: "none", width: "100%", height: "100%" }}
             key={item.id}
-            variant="outlined"
-            sx={{
-              borderColor: "#fff",
-              display: "flex",
-              flexDirection: "column",
-              width: "12em",
-              padding: "1.5em 0",
-              borderRadius: "10px",
-              marginBottom: "2em",
-              "&:hover": {
-                borderColor: "#D1C62A",
-                backgroundColor: "#D1C62A",
-              },
-              "&:active": {
-                borderColor: isActive ? "#D1C62A" : "transparent",
-                backgroundColor: isActive ? "#D1C62A" : "transparent",
-              },
-            }}
-            onClick={() => {
-              setIsActive(true);
-              console.log(item.id);
-            }}
           >
-            <Link
-              to={`/${item.pageLink}`}
-              style={{ textDecoration: "none", width: "100%", height: "100%" }}
+            <Button
+              disableRipple
+              variant="outlined"
+              sx={{
+                borderColor: "#fff",
+                display: "flex",
+                flexDirection: "column",
+                width: "12em",
+                padding: "1.5em 0",
+                borderRadius: "10px",
+                marginBottom: "2em",
+                "&:hover": {
+                  borderColor: "#D1C62A",
+                  backgroundColor: "#D1C62A",
+                },
+                "&:active": {
+                  borderColor: isActive ? "#D1C62A" : "transparent",
+                  backgroundColor: isActive ? "#D1C62A" : "transparent",
+                },
+              }}
+              onClick={() => {
+                setIsActive(true);
+                console.log(item.id);
+              }}
             >
               <img src={item.image} alt="" style={{ width: "2.5rem" }} />
               <Typography
@@ -51,8 +51,8 @@ const SideBar = () => {
               >
                 {item.text}
               </Typography>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         ))}
       </Box>
     </Box>
@@ -76,13 +76,13 @@ const buttonItem = [
     id: 3,
     image: departments,
     text: "Departments",
-    pageLink: "departments",
+    pageLink: "about",
   },
   {
     id: 4,
     image: structures,
     text: "Structures",
-    pageLink: "structures",
+    pageLink: "objectives",
   },
   {
     id: 5,

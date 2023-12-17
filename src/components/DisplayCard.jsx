@@ -41,7 +41,7 @@ const DisplayCard = () => {
             }}
             initial={false}
             animate={{ rotateY: isFlipped ? 180 : 360 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.2 }}
             whileHover={{ rotateY: isFlipped ? 360 : 180 }}
             onAnimationComplete={() => setIsFlipAnimating(false)}
           >

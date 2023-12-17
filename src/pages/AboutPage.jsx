@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import SideBar from "../components/SideBar";
+import Transition from "../components/transition";
 
 const AboutPage = () => {
   return (
@@ -49,4 +50,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default Transition(AboutPage);
