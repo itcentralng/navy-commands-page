@@ -10,56 +10,86 @@ const AboutPage = () => {
         sx={{ display: "flex", justifyContent: "space-between", width: "90%" }}
       >
         <SideBar>
-          <Box sx={{ width: "78%", marginLeft: "4.5em", marginTop: "5em" }}>
+          {itemData.map((item) => (
             <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-              }}
+              sx={{ width: "78%", marginLeft: "4.5em", marginTop: "5em" }}
+              key={item.id}
             >
-              <Typography
-                variant="h2"
+              <Box
                 sx={{
-                  color: "#fff",
-                  fontSize: "3rem",
-                  width: "57%",
+                  display: "flex",
+                  alignItems: "center",
                 }}
               >
-                THE NIGERIAN NAVY CENTRAL COMMAND
+                <Typography
+                  variant="h2"
+                  sx={{
+                    color: "#fff",
+                    fontSize: "3rem",
+                    width: "57%",
+                  }}
+                >
+                  {item.header}
+                </Typography>
+                <img src={central} alt="" style={{ width: "4em" }} />
+              </Box>
+              <Typography
+                variant="body2"
+                sx={{
+                  color: "#fff",
+                  marginTop: "2.5em",
+                  fontSize: "1.2rem",
+                }}
+              >
+                {item.text}
               </Typography>
-              <img src={central} alt="" style={{ width: "4em" }} />
             </Box>
-            <Typography
-              variant="body2"
-              sx={{
-                color: "#fff",
-                marginTop: "2.5em",
-                fontSize: "1.2rem",
-              }}
-            >
-              The Central Naval Command (CNC) was established February 2012 with
-              its headquarters at Brass, Bayelsa State. Being a new command
-              without any offices or structures on ground in Brass, a command’s
-              temporary headquarters commenced operations as a HQ (Annex) CNC at
-              Yenagoa in March 2012 with the first wave of officers and ratings.
-              The Command’s Area of Responsibility (AOR) extends from the area
-              before River Benin entrance at Longitude 005 00′ E to River Santa
-              Barbara entrance at Longitude 006 30′ E covering a coastal
-              distance of about 156nm. The coastal states covered by the Command
-              are Bayelsa and Delta states, while the inland states in the AOR
-              include Edo, Kogi and Anambra States. Based on the CNC established
-              AOR, all the existing naval bases and establishments located in
-              the states within the AOR became part of the CNC. These bases and
-              establishments are NNS DELTA, NNS LUGARD, FOB ESCRAVOS, NNH WARRI,
-              Naval Flying Unit and Naval Outpost Onitsha. Others are the
-              Nigerian Navy Research Institute in Amassoma and FOB FORMOSO in
-              FORMOSO.
-            </Typography>
-          </Box>
+          ))}
         </SideBar>
       </Box>
     </Box>
   );
 };
+
+const itemData = [
+  {
+    id: 1,
+    header: "The Nigerian Navy Central Command",
+    text: `Since inception in 1956, the statutory roles of the NN have expanded to cover the
+    full   spectrum   of   military,   policing   and   diplomatic   functions.   So   also,   were   the
+    imperatives   of   operational   capacity   that   demand   effective   presence   and   domain
+    awareness within the internal waters, territorial seas and the Exclusive Economic Zone
+    (EEZ). As part of the structural response to these challenges, the NN had over the past
+    decades operated a two-command structure for the coordination of its operational level
+    activities, namely; Western Naval Command (WNC) and Eastern Naval Command
+    (ENC). while noting that both operational commands have equitably discharged their
+    responsibilities, recent events and indeed the trend of threats within the nation's marital
+    domain have justified the necessity for. review of the current structure. Specifically, the
+    emergence of various forms of illegal trafficking, militancy, sabotage. piracy and attacks
+    on shipping have placed considerable demand on NN policing capacity, particularly in
+    the Niger Delta. Inevitably, apart from improved coastal presence with ships and bases,
+    there are emergent requirements for more robust capability on riverine and special
+    operations, including the protection of Key Points and Valuable Points.
+    
+    In consonance with the foregoing realities, the NN besides previous arguments for,
+    and under its ongoing transformation process identified the need for the creation of a
+    third operational command. Therefore, following the recent approval by the Navy Board,
+    this Nigerian Navy Order hereby promulgates the establishment of the Third Operational
+    Command to be known as the Central Naval Command (CNC).`,
+  },
+  // {
+  //   id: 2,
+  //   header: "The Naval Training Command",
+  //   text: `The   Naval   Training   Command   (NAVTRAC)   is   hereby
+  //   established for the centralized control, execution and superintendence
+  //   of Local Training in the in  the Nigerian Navy, and for the purpose of
+  //   coordinating and harmonizing the training doctrine, concepts and
+  //   standards o local Training in Nigeria, including Basic Sea Training
+  //   for ratings, cadets, officers, the commander will also be responsible
+  //   for the basic Operational Sea Training (BOST), safety Operational
+  //   Sea Training (SOST) and Consolidation Operational Sea Training
+  //   (COST) of the Fleet.`,
+  // },
+];
 
 export default Transition(AboutPage);
