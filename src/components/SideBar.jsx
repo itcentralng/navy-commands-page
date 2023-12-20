@@ -6,9 +6,21 @@ import departments from "../assets/departments.svg";
 import structures from "../assets/structures.svg";
 import gallery from "../assets/gallery.svg";
 import flag from "../assets/flag.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
+import { sidebarLinks } from "../../data";
 
 const SideBar = ({ children }) => {
+  const location = useLocation();
+  const { id } = useParams();
+
+  const selectedItem = sidebarLinks[0]?.linkId.find(
+    (item) => item.id === Number(id)
+  );
+
+  if (!selectedItem) {
+    return <div>Item not found</div>;
+  }
+
   return (
     <Box
       sx={{
@@ -19,13 +31,13 @@ const SideBar = ({ children }) => {
       <Box sx={{ width: "20%" }}>
         {buttonItem.map((item) => (
           <Link
-            to={`/${item.pageLink}`}
+            to={`/${item.pageLink}/${selectedItem.id}`}
             style={{
               textDecoration: "none",
               width: "100%",
               height: "100%",
             }}
-            key={item.id}
+            key={selectedItem.id}
           >
             <Button
               disableRipple
@@ -39,7 +51,7 @@ const SideBar = ({ children }) => {
                 borderRadius: "20px",
                 marginBottom: "2em",
                 backgroundColor:
-                  location.pathname === `/${item.pageLink}`
+                  location.pathname === `/${item.pageLink}/${selectedItem.id}`
                     ? "#D1C62A"
                     : "transparent",
                 "&:hover": {

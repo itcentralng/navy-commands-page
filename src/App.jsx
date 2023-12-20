@@ -1,5 +1,5 @@
 import HeroPage from "./pages/HeroPage";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation, useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 import backgroundImage from "./assets/BackgroundImg.svg";
 import AboutPage from "./pages/AboutPage";
@@ -10,6 +10,7 @@ import FlagsPage from "./pages/FlagsPage";
 import PastCommanding from "./pages/PastCommanding";
 
 const App = () => {
+  const location = useLocation();
   return (
     <Box
       sx={{
@@ -25,8 +26,8 @@ const App = () => {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HeroPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/objectives" element={<Objectives />} />
+          <Route path="/about/:id" element={<AboutPage />} />
+          <Route path="/objectives/:id" element={<Objectives />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/flag" element={<FlagsPage />} />
           <Route path="/flag/past-commanding" element={<PastCommanding />} />

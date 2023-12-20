@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import central from "../assets/central.svg";
 import eastern from "../assets/eastern.svg";
 import western from "../assets/western.svg";
@@ -92,7 +92,7 @@ const DisplayCard = () => {
               </div>
             </div>
             <Link
-              to="/about"
+              to={`/about/${item.id}`}
               style={{
                 textDecoration: "none",
                 position: "absolute",
@@ -122,15 +122,6 @@ const DisplayCard = () => {
                   alt=""
                   style={{ width: "40%", marginBottom: "2.5em" }}
                 />
-                <Typography
-                  sx={{
-                    color: "#fff",
-                    textDecoration: "none",
-                    fontSize: "1.2em",
-                  }}
-                >
-                  {item.cmdPageLink}
-                </Typography>
               </div>
             </Link>
           </motion.div>
@@ -146,35 +137,30 @@ const data = [
     front: central,
     back: central,
     lowerText: "Central Naval Command",
-    cmdPageLink: "Read more",
   },
   {
     id: 2,
     front: eastern,
     back: eastern,
     lowerText: "Eastern Naval Command",
-    cmdPageLink: "Read more",
   },
   {
     id: 3,
     front: western,
     back: western,
     lowerText: "Western Naval Command",
-    cmdPageLink: "Read more",
   },
   {
     id: 4,
     front: logistic,
     back: logistic,
     lowerText: "Naval Logistics Command",
-    cmdPageLink: "Read more",
   },
   {
     id: 5,
     front: training,
     back: training,
     lowerText: "Nigerian Navy Training Base",
-    cmdPageLink: "Read more",
   },
 ];
 
