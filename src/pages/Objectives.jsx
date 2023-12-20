@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
 import SideBar from "../components/SideBar";
 import Transition from "../components/transition";
+import DetailsHeader from "../components/DetailsHeader";
 
 const Objectives = () => {
   return (
@@ -9,30 +9,31 @@ const Objectives = () => {
       <Box
         sx={{ display: "flex", justifyContent: "space-between", width: "90%" }}
       >
-        <Box>
-          <SideBar />
-        </Box>
-        <Box sx={{ width: "75%" }}>
-          <Typography
-            variant="h2"
-            sx={{ color: "#fff", fontSize: "3rem", marginBottom: "1em" }}
-          >
-            BENEFITS OF THE NIGERIAN NAVY CENTRAL COMMAND
-          </Typography>
-          {objectivesList.map((item) => (
-            <Typography
-              key={item.id}
-              variant="body2"
-              sx={{
-                color: "#fff",
-                fontSize: "1.2rem",
-                marginBottom: "1.2em",
-              }}
-            >
-              {item.listItem}
-            </Typography>
-          ))}
-        </Box>
+        <SideBar>
+          <DetailsHeader>
+            <Box sx={{ width: "80%", marginLeft: "4.5em" }}>
+              <Typography
+                variant="h2"
+                sx={{ color: "#fff", fontSize: "3rem", marginBottom: "1em" }}
+              >
+                BENEFITS OF THE NIGERIAN NAVY CENTRAL COMMAND
+              </Typography>
+              {objectivesList.map((item) => (
+                <Typography
+                  key={item.id}
+                  variant="body2"
+                  sx={{
+                    color: "#fff",
+                    fontSize: "1.2rem",
+                    marginBottom: "1.2em",
+                  }}
+                >
+                  {item.listItem}
+                </Typography>
+              ))}
+            </Box>
+          </DetailsHeader>
+        </SideBar>
       </Box>
     </Box>
   );

@@ -8,6 +8,7 @@ import gallery3 from "../assets/gallery3.svg";
 import gallery4 from "../assets/gallery4.svg";
 import gallery5 from "../assets/gallery5.svg";
 import "@splidejs/react-splide/css";
+import DetailsHeader from "../components/DetailsHeader";
 
 const Gallery = () => {
   return (
@@ -20,59 +21,58 @@ const Gallery = () => {
           alignItems: "center",
         }}
       >
-        <Box>
-          <SideBar />
-        </Box>
-        <Box sx={{ width: "75%" }}>
-          <Splide
-            options={{
-              type: "loop",
-              autoplay: true,
-              pauseOnHover: false,
-              resetProgress: false,
-            }}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
-            {splideImageList.map((item) => (
-              <SplideSlide
-                key={item.id}
+        <SideBar>
+          <DetailsHeader>
+            <Box sx={{ width: "100%" }}>
+              <Splide
+                options={{
+                  type: "loop",
+                  autoplay: true,
+                  pauseOnHover: false,
+                  resetProgress: false,
+                }}
                 style={{
                   display: "flex",
                   justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
                 }}
               >
-                <img src={item.imageItem} alt="" style={{ width: "50%" }} />
-              </SplideSlide>
-            ))}
-          </Splide>
-          <Box
-            sx={{ display: "flex", marginTop: "2em", justifyContent: "center" }}
-          >
-            {imageList.map((item) => (
-              <img
-                key={item.id}
-                src={item.image}
-                alt=""
-                style={{ width: "5.5em" }}
-              />
-            ))}
-          </Box>
-        </Box>
+                {imageList.map((item) => (
+                  <SplideSlide
+                    key={item.id}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img src={item.image} alt="" style={{ width: "50%" }} />
+                  </SplideSlide>
+                ))}
+              </Splide>
+              <Box
+                sx={{
+                  display: "flex",
+                  marginTop: "2em",
+                  justifyContent: "center",
+                }}
+              >
+                {imageList.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.image}
+                    alt=""
+                    style={{ width: "5.5em" }}
+                  />
+                ))}
+              </Box>
+            </Box>
+          </DetailsHeader>
+        </SideBar>
       </Box>
     </Box>
   );
 };
-
-const splideImageList = [
-  { id: 1, imageItem: gallery1 },
-  { id: 1, imageItem: gallery2 },
-  { id: 1, imageItem: gallery3 },
-];
 
 const imageList = [
   { id: 1, image: gallery1 },

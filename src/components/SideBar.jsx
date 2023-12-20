@@ -1,22 +1,30 @@
+/* eslint-disable react/prop-types */
 import { Box, Button, Typography } from "@mui/material";
-import React, { useState } from "react";
 import about from "../assets/about.svg";
 import objectives from "../assets/objectives.svg";
 import departments from "../assets/departments.svg";
 import structures from "../assets/structures.svg";
 import gallery from "../assets/gallery.svg";
+import flag from "../assets/flag.svg";
 import { Link } from "react-router-dom";
 
-const SideBar = () => {
-  const [isActive, setIsActive] = useState(false);
-
+const SideBar = ({ children }) => {
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <Box sx={{ width: "90%" }}>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <Box sx={{ width: "20%" }}>
         {buttonItem.map((item) => (
           <Link
             to={`/${item.pageLink}`}
-            style={{ textDecoration: "none", width: "100%", height: "100%" }}
+            style={{
+              textDecoration: "none",
+              width: "100%",
+              height: "100%",
+            }}
             key={item.id}
           >
             <Button
@@ -27,21 +35,17 @@ const SideBar = () => {
                 display: "flex",
                 flexDirection: "column",
                 width: "12em",
-                padding: "1.5em 0",
-                borderRadius: "10px",
+                padding: "2em 0",
+                borderRadius: "20px",
                 marginBottom: "2em",
+                backgroundColor:
+                  location.pathname === `/${item.pageLink}`
+                    ? "#D1C62A"
+                    : "transparent",
                 "&:hover": {
                   borderColor: "#D1C62A",
                   backgroundColor: "#D1C62A",
                 },
-                "&:active": {
-                  borderColor: isActive ? "#D1C62A" : "transparent",
-                  backgroundColor: isActive ? "#D1C62A" : "transparent",
-                },
-              }}
-              onClick={() => {
-                setIsActive(true);
-                console.log(item.id);
               }}
             >
               <img src={item.image} alt="" style={{ width: "2.5rem" }} />
@@ -55,6 +59,7 @@ const SideBar = () => {
           </Link>
         ))}
       </Box>
+      {children}
     </Box>
   );
 };
@@ -86,6 +91,12 @@ const buttonItem = [
   },
   {
     id: 5,
+    image: flag,
+    text: "Flag Officer",
+    pageLink: "flag",
+  },
+  {
+    id: 6,
     image: gallery,
     text: "Gallery",
     pageLink: "gallery",

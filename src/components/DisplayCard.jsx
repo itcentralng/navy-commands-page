@@ -1,12 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import logistics from "../assets/logistics.svg";
-import central from "../assets/central.svg";
-import doctrine from "../assets/doctrine.svg";
-import nhs from "../assets/nhs.svg";
-import training from "../assets/training.svg";
 import { Link } from "react-router-dom";
+import central from "../assets/central.svg";
+import eastern from "../assets/eastern.svg";
+import western from "../assets/western.svg";
+import logistic from "../assets/logistic.svg";
+import training from "../assets/training.svg";
 
 const DisplayCard = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -35,9 +35,9 @@ const DisplayCard = () => {
             style={{
               transition: "transform 0.4s",
               transformStyle: "preserve-3d",
-              width: "18%",
+              width: "25%",
               cursor: "pointer",
-              height: "15em",
+              minHeight: "12em",
             }}
             initial={false}
             animate={{ rotateY: isFlipped ? 180 : 360 }}
@@ -49,46 +49,90 @@ const DisplayCard = () => {
               style={{
                 position: "absolute",
                 backfaceVisibility: "hidden",
-                border: "none",
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                height: "100%",
               }}
             >
-              <img src={item.front} alt="" style={{ width: "100%" }} />
-              <Typography
-                variant="body2"
-                sx={{
-                  color: "#fff",
-                  textTransform: "uppercase",
-                  textAlign: "center",
-                  fontSize: "1rem",
+              <div
+                style={{
+                  width: "85%",
+                  backgroundColor: "#FFFFFF80",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  padding: "1.5em 0",
+                  borderRadius: "20px",
+                  height: "100%",
                 }}
               >
-                {item.lowerText}
-              </Typography>
+                <img
+                  src={item.front}
+                  alt=""
+                  style={{
+                    width: "40%",
+                    marginBottom: "1.5em",
+                  }}
+                />
+
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: "#fff",
+                    textTransform: "uppercase",
+                    textAlign: "center",
+                    fontSize: "1rem",
+                    width: "80%",
+                  }}
+                >
+                  {item.lowerText}
+                </Typography>
+              </div>
             </div>
-            <div
+            <Link
+              to="/about"
               style={{
+                textDecoration: "none",
                 position: "absolute",
                 backfaceVisibility: "hidden",
-                border: "none",
                 transform: "rotateY(180deg)",
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                height: "100%",
               }}
             >
-              <img src={item.back} alt="" style={{ width: "100%" }} />
-              <Link
-                to={`/about`}
+              <div
                 style={{
-                  color: "#fff",
-                  textDecoration: "none",
-                  position: "relative",
-                  bottom: 50,
-                  left: 110,
-                  fontSize: "1.2em",
-                  borderBottom: "3px solid #80808080",
+                  width: "85%",
+                  backgroundColor: "#FFFFFF80",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  padding: "1.5em 0",
+                  borderRadius: "20px",
+                  height: "100%",
                 }}
               >
-                {item.cmdPageLink}
-              </Link>
-            </div>
+                <img
+                  src={item.back}
+                  alt=""
+                  style={{ width: "40%", marginBottom: "2.5em" }}
+                />
+                <Typography
+                  sx={{
+                    color: "#fff",
+                    textDecoration: "none",
+                    fontSize: "1.2em",
+                  }}
+                >
+                  {item.cmdPageLink}
+                </Typography>
+              </div>
+            </Link>
           </motion.div>
         ))}
       </div>
@@ -99,37 +143,37 @@ const DisplayCard = () => {
 const data = [
   {
     id: 1,
-    front: logistics,
-    back: logistics,
-    lowerText: "The Nigerian Navy Logistics Command",
+    front: central,
+    back: central,
+    lowerText: "Central Naval Command",
     cmdPageLink: "Read more",
   },
   {
     id: 2,
-    front: central,
-    back: central,
-    lowerText: "The Nigerian Navy Logistics Command",
+    front: eastern,
+    back: eastern,
+    lowerText: "Eastern Naval Command",
     cmdPageLink: "Read more",
   },
   {
     id: 3,
-    front: training,
-    back: training,
-    lowerText: "The Nigerian Navy Logistics Command",
+    front: western,
+    back: western,
+    lowerText: "Western Naval Command",
     cmdPageLink: "Read more",
   },
   {
     id: 4,
-    front: doctrine,
-    back: doctrine,
-    lowerText: "The Nigerian Navy Logistics Command",
+    front: logistic,
+    back: logistic,
+    lowerText: "Naval Logistics Command",
     cmdPageLink: "Read more",
   },
   {
     id: 5,
-    front: nhs,
-    back: nhs,
-    lowerText: "The Nigerian Navy Logistics Command",
+    front: training,
+    back: training,
+    lowerText: "Nigerian Navy Training Base",
     cmdPageLink: "Read more",
   },
 ];

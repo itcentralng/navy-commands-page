@@ -1,37 +1,41 @@
+/* eslint-disable react/prop-types */
 import { Box, Typography } from "@mui/material";
 import navylogo from "../assets/navylogo.svg";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ children }) => {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        width: "100%",
-        justifyContent: "center",
-      }}
-    >
+    <Box>
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-between",
-          width: "90%",
+          justifyContent: "center",
+          width: "100%",
         }}
       >
-        <Typography
-          variant="h5"
+        <Box
           sx={{
-            fontSize: "1rem",
-            color: "#fff",
-            fontFamily: "'Lato', sans-serif",
+            display: "flex",
+            justifyContent: "space-between",
+            width: "90%",
           }}
         >
-          <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
-            NAVY COMMANDS
-          </Link>
-        </Typography>
-        <img src={navylogo} alt="" style={{ width: "3.5rem" }} />
+          <Typography
+            variant="h5"
+            sx={{
+              fontSize: "1rem",
+              color: "#fff",
+              fontFamily: "'Lato', sans-serif",
+            }}
+          >
+            <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
+              NAVY COMMANDS
+            </Link>
+          </Typography>
+          <img src={navylogo} alt="" style={{ width: "3.5rem" }} />
+        </Box>
       </Box>
+      {children}
     </Box>
   );
 };

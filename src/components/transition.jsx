@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import { motion } from "framer-motion";
 
 import React from "react";
