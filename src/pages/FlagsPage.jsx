@@ -2,7 +2,6 @@ import { Box, Typography } from "@mui/material";
 import SideBar from "../components/SideBar";
 import Transition from "../components/transition";
 import DetailsHeader from "../components/DetailsHeader";
-import nigNavy from "../assets/nignavy.svg";
 import { Link, useParams } from "react-router-dom";
 import { centralData } from "../../data";
 

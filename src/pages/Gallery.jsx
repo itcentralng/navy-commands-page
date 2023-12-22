@@ -1,12 +1,6 @@
 import { Box } from "@mui/material";
 import SideBar from "../components/SideBar";
 import Transition from "../components/transition";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import gallery1 from "../assets/gallery1.svg";
-import gallery2 from "../assets/gallery2.svg";
-import gallery3 from "../assets/gallery3.svg";
-import gallery4 from "../assets/gallery4.svg";
-import gallery5 from "../assets/gallery5.svg";
 import "@splidejs/react-splide/css";
 import DetailsHeader from "../components/DetailsHeader";
 import blankRectangle from "../assets/blank-rectangle.svg";

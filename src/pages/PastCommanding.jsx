@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import SideBar from "../components/SideBar";
 import Transition from "../components/transition";
 import DetailsHeader from "../components/DetailsHeader";
-import blankRectangle from "../assets/blank-rectangle.svg";
 import { useParams } from "react-router-dom";
 import { centralData } from "../../data";
 
