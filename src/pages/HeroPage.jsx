@@ -2,7 +2,7 @@
 import { Box, Typography } from "@mui/material";
 import DisplayCard from "../components/DisplayCard";
 import Header from "../components/Header";
-// import Transition from "../components/transition";
+import Transition from "../components/transition";
 
 const HeroPage = () => {
   return (
@@ -91,4 +91,4 @@ const HeroPage = () => {
   );
 };
 
-export default HeroPage;
+export default Transition(HeroPage);
