@@ -10,9 +10,7 @@ const Objectives = () => {
   const { id } = useParams();
   console.log("Current id:", id); // Add this line
 
-  const selectedItem = centralData[0]?.objective.find(
-    (item) => item.id === Number(id)
-  );
+  const selectedItem = centralData[0]?.objective.find((item) => item.id === Number(id));
   console.log("Selected Item:", selectedItem); // Add this line
 
   if (!selectedItem) {
@@ -27,9 +25,7 @@ const Objectives = () => {
 
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <Box
-        sx={{ display: "flex", justifyContent: "space-between", width: "90%" }}
-      >
+      <Box sx={{ display: "flex", justifyContent: "space-between", width: "90%" }}>
         <SideBar>
           <DetailsHeader>
             <Box
@@ -44,6 +40,7 @@ const Objectives = () => {
                   color: "#fff",
                   fontSize: "3rem",
                   marginBottom: "1em",
+                  fontFamily: "Perpetua Light",
                 }}
               >
                 {selectedItem.header}
@@ -83,6 +80,8 @@ const Objectives = () => {
                     fontSize: "1.2rem",
                     marginBottom: "1.2em",
                     width: "100%",
+                    fontFamily: "Manrope",
+                    lineHeight: "1.8",
                   }}
                 >
                   {selectedItem.text.split("\n").map((line, index) => (

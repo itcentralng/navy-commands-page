@@ -9,9 +9,7 @@ import DetailsHeader from "../components/DetailsHeader";
 const AboutPage = () => {
   const { id } = useParams();
 
-  const selectedItem = centralData[0]?.about.find(
-    (item) => item.id === Number(id)
-  );
+  const selectedItem = centralData[0]?.about.find((item) => item.id === Number(id));
 
   if (!selectedItem) {
     // Handle the case where the item is not found
@@ -55,6 +53,7 @@ const AboutPage = () => {
                   fontSize: "3rem",
                   width: "58%",
                   textTransform: "uppercase",
+                  fontFamily: "Perpetua Light",
                 }}
               >
                 {selectedItem.header}
@@ -95,6 +94,8 @@ const AboutPage = () => {
                   marginTop: "1em",
                   fontSize: "1.2rem",
                   width: "100%",
+                  fontFamily: "Manrope",
+                  lineHeight: "1.8",
                   // marginBottom: "18em",
                 }}
               >

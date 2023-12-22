@@ -19,34 +19,40 @@ const HeroPage = () => {
           sx={{
             height: "100%",
             width: "90%",
+            display: "flex",
+            justifyContent: "space-between",
           }}
         >
           <Box mt={4}>
-            <Typography
-              variant="h3"
-              sx={{
-                fontSize: "3rem",
-                color: "#D1C62A",
-                textAlign: "center",
-                fontWeight: 300,
-              }}
-            >
-              THE NIGERIAN NAVY COMMANDS
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                color: "#fff",
-                fontSize: "1.4rem",
-                textAlign: "center",
-                textTransform: "capitalize",
-                marginTop: "1.2em",
-              }}
-            >
-              “From successful maritime operations to humanitarian missions, our
-              naval forces continue to uphold the highest standards of
-              professionalism and excellence."
-            </Typography>
+            <Box>
+              <Typography
+                variant="h3"
+                sx={{
+                  fontSize: "3rem",
+                  color: "#D1C62A",
+                  textAlign: "center",
+                  fontWeight: 300,
+                  fontFamily: "Perpetua Light",
+                }}
+              >
+                THE NIGERIAN NAVY COMMANDS
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{
+                  color: "#fff",
+                  fontSize: "1.4rem",
+                  lineHeight: "1.5",
+                  textAlign: "center",
+                  textTransform: "capitalize",
+                  marginTop: "1.2em",
+                  fontFamily: "ManropeSemiBold",
+                }}
+              >
+                “From successful maritime operations to humanitarian missions, our naval forces continue to uphold the highest standards of professionalism and excellence."
+              </Typography>
+            </Box>
+
             <Box
               sx={{
                 marginTop: "6em",
