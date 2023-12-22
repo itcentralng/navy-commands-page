@@ -36,7 +36,7 @@ const SideBar = ({ children }) => {
         position: "relative",
       }}
     >
-      <Box sx={{ width: "20%" }}>
+      <Box sx={{ width: "15%" }}>
         {buttonItem.map((item) => (
           <Link
             to={`/${item.pageLink}/${selectedItem.id}`}
@@ -54,7 +54,8 @@ const SideBar = ({ children }) => {
                 borderColor: "#fff",
                 display: "flex",
                 flexDirection: "column",
-                width: "12em",
+                width: "12.8125rem",
+                height: "9.2125rem",
                 padding: "2em 0",
                 borderRadius: "20px",
                 marginBottom: "2em",
@@ -68,10 +69,14 @@ const SideBar = ({ children }) => {
                 },
               }}
             >
-              <img src={item.image} alt="" style={{ width: "2.5rem" }} />
+              <img src={item.image} alt="" style={{ width: "3.2rem" }} />
               <Typography
                 variant="body2"
-                sx={{ color: "#fff", textTransform: "uppercase" }}
+                sx={{
+                  color: "#fff",
+                  textTransform: "uppercase",
+                  fontSize: "1.25rem",
+                }}
               >
                 {item.text}
               </Typography>
@@ -79,22 +84,7 @@ const SideBar = ({ children }) => {
           </Link>
         ))}
       </Box>
-      <Link
-        to="/"
-        style={{
-          textDecoration: "none",
-          color: "#fff",
-          border: "1px solid #fff",
-          position: "absolute",
-          top: "80%",
-          left: "75%",
-          width: "15%",
-          padding: "1.2em 2.5em",
-          borderRadius: "25px",
-        }}
-      >
-        <Box sx={{ textAlign: "center" }}>BACK TO HOME</Box>
-      </Link>
+
       {children}
     </Box>
   );

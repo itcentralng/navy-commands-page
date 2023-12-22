@@ -1,133 +1,62 @@
-import { Typography } from "@mui/material";
-import { motion } from "framer-motion";
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import central from "../assets/central.svg";
 import eastern from "../assets/eastern.svg";
 import western from "../assets/western.svg";
 import logistic from "../assets/logistic.svg";
 import training from "../assets/training.svg";
+import { Box, Typography } from "@mui/material";
 
 const DisplayCard = () => {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [isFlipAnimating, setIsFlipAnimating] = useState(false);
-
-  const handleImageFlip = () => {
-    if (!isFlipAnimating) {
-      setIsFlipped(!isFlipped);
-      setIsFlipAnimating(true);
-    }
-  };
-
   return (
-    <div>
-      <div
-        style={{
+    <Box>
+      <Box
+        sx={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          perspective: "1000px",
         }}
       >
         {data.map((item) => (
-          <motion.div
-            key={item.id}
-            style={{
-              transition: "transform 0.4s",
-              transformStyle: "preserve-3d",
-              width: "25%",
-              cursor: "pointer",
-              minHeight: "12em",
-            }}
-            initial={false}
-            animate={{ rotateY: isFlipped ? 180 : 360 }}
-            transition={{ duration: 0.2 }}
-            whileHover={{ rotateY: isFlipped ? 360 : 180 }}
-            onAnimationComplete={() => setIsFlipAnimating(false)}
-          >
-            <div
-              style={{
-                position: "absolute",
-                backfaceVisibility: "hidden",
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                height: "100%",
-              }}
-            >
-              <div
-                style={{
-                  width: "85%",
-                  backgroundColor: "#FFFFFF80",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                  padding: "1.5em 0",
-                  borderRadius: "20px",
-                  height: "100%",
-                }}
-              >
-                <img
-                  src={item.front}
-                  alt=""
-                  style={{
-                    width: "40%",
-                    marginBottom: "1.5em",
-                  }}
-                />
-
-                <Typography
-                  variant="body2"
-                  sx={{
-                    color: "#fff",
-                    textTransform: "uppercase",
-                    textAlign: "center",
-                    fontSize: "1rem",
-                    width: "80%",
-                  }}
-                >
-                  {item.lowerText}
-                </Typography>
-              </div>
-            </div>
+          <Box key={item.id}>
             <Link
               to={`/about/${item.id}`}
               style={{
                 textDecoration: "none",
-                position: "absolute",
-                backfaceVisibility: "hidden",
-                transform: "rotateY(180deg)",
-                width: "100%",
+                color: "#fff",
                 display: "flex",
-                justifyContent: "center",
-                height: "100%",
+                justifyContent: "space-around",
+                alignItems: "center",
+                flexDirection: "column",
+                backgroundColor: "#FFFFFF80",
+                height: "270px",
+                borderRadius: "15px",
+                width: "250px",
               }}
             >
-              <div
+              <img
+                src={item.front}
+                alt=""
                 style={{
-                  width: "85%",
-                  backgroundColor: "#FFFFFF80",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                  padding: "1.5em 0",
-                  borderRadius: "20px",
-                  height: "100%",
+                  width: item.width,
+                  height: item.height,
+                  objectFit: "contain",
+                }}
+              />
+              <Typography
+                variant="body2"
+                sx={{
+                  fontSize: "1.5rem",
+                  textTransform: "uppercase",
+                  textAlign: "center",
                 }}
               >
-                <img
-                  src={item.back}
-                  alt=""
-                  style={{ width: "40%", marginBottom: "2.5em" }}
-                />
-              </div>
+                {item.lowerText}
+              </Typography>
             </Link>
-          </motion.div>
+          </Box>
         ))}
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 
@@ -135,32 +64,37 @@ const data = [
   {
     id: 1,
     front: central,
-    back: central,
     lowerText: "Central Naval Command",
+    height: "9.1875rem",
+    width: "6.25rem",
   },
   {
     id: 2,
     front: eastern,
-    back: eastern,
     lowerText: "Eastern Naval Command",
+    height: "9.2105rem",
+    width: "6.25rem",
   },
   {
     id: 3,
     front: western,
-    back: western,
     lowerText: "Western Naval Command",
+    height: "8.875rem",
+    width: "7.375rem",
   },
   {
     id: 4,
     front: logistic,
-    back: logistic,
     lowerText: "Naval Logistics Command",
+    height: "9.1875rem",
+    width: "6.25rem",
   },
   {
     id: 5,
     front: training,
-    back: training,
     lowerText: "Nigerian Navy Training Base",
+    height: "9.1875rem",
+    width: "6.8125rem",
   },
 ];
 

@@ -1,9 +1,10 @@
 import { Box } from "@mui/material";
 import SideBar from "../components/SideBar";
-import Transition from "../components/transition";
+// import Transition from "../components/transition";
 import DetailsHeader from "../components/DetailsHeader";
 import { useParams } from "react-router-dom";
 import { centralData } from "../../data";
+import BackButton from "../components/BackButton";
 
 const PastCommanding = () => {
   const { id } = useParams();
@@ -15,10 +16,18 @@ const PastCommanding = () => {
   if (!selectedItem) {
     // Handle the case where the item is not found
     return (
-      <Box sx={{ marginLeft: "4em" }}>
-        <DetailsHeader>
-          <SideBar />
-        </DetailsHeader>
+      <Box
+        sx={{
+          marginLeft: "6em",
+          display: "flex",
+          position: "relative",
+        }}
+      >
+        <SideBar></SideBar>
+        <DetailsHeader></DetailsHeader>
+        <Box>
+          <BackButton />
+        </Box>
       </Box>
     );
   }
@@ -78,8 +87,9 @@ const PastCommanding = () => {
           </DetailsHeader>
         </SideBar>
       </Box>
+      <BackButton />
     </Box>
   );
 };
 
-export default Transition(PastCommanding);
+export default PastCommanding;

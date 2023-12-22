@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Box } from "@mui/material";
-import navylogo from "../assets/navylogo.svg";
+import central from "../assets/central.svg";
 
 const DetailsHeader = ({ children }) => {
   return (
@@ -19,9 +19,9 @@ const DetailsHeader = ({ children }) => {
         }}
       >
         <img
-          src={navylogo}
+          src={central}
           alt=""
-          style={{ width: "3.5rem", justifySelf: "end" }}
+          style={{ width: "6.25rem", justifySelf: "end" }}
         />
       </Box>
       {children}

@@ -8,6 +8,8 @@ import Gallery from "./pages/Gallery";
 import { AnimatePresence } from "framer-motion";
 import FlagsPage from "./pages/FlagsPage";
 import PastCommanding from "./pages/PastCommanding";
+import Structures from "./pages/Structures";
+import Department from "./pages/Department";
 
 const App = () => {
   const location = useLocation();
@@ -15,21 +17,20 @@ const App = () => {
     <Box
       sx={{
         backgroundImage: `url(${backgroundImage})`,
-        minHeight: "100vh",
+        height: "100vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "100%",
         paddingTop: "2em",
       }}
     >
-      <AnimatePresence mode="wait">
+      <AnimatePresence initial={false} mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HeroPage />} />
           <Route path="/about/:id" element={<AboutPage />} />
-          <Route path="/departments/:id" element={<AboutPage />} />
+          <Route path="/departments/:id" element={<Department />} />
           <Route path="/objectives/:id" element={<Objectives />} />
-          <Route path="/structures/:id" element={<Objectives />} />
+          <Route path="/structures/:id" element={<Structures />} />
           <Route path="/gallery/:id" element={<Gallery />} />
           <Route path="/flag/:id" element={<FlagsPage />} />
           <Route path={`/past-commanding/:id`} element={<PastCommanding />} />

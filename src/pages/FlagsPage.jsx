@@ -1,9 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import SideBar from "../components/SideBar";
-import Transition from "../components/transition";
+// import Transition from "../components/transition";
 import DetailsHeader from "../components/DetailsHeader";
 import { Link, useParams } from "react-router-dom";
 import { centralData } from "../../data";
+import BackButton from "../components/BackButton";
 
 const FlagsPage = () => {
   const { id } = useParams();
@@ -15,10 +16,18 @@ const FlagsPage = () => {
   if (!selectedItem) {
     // Handle the case where the item is not found
     return (
-      <Box sx={{ marginLeft: "4em" }}>
-        <DetailsHeader>
-          <SideBar />
-        </DetailsHeader>
+      <Box
+        sx={{
+          marginLeft: "6em",
+          display: "flex",
+          position: "relative",
+        }}
+      >
+        <SideBar></SideBar>
+        <DetailsHeader></DetailsHeader>
+        <Box>
+          <BackButton />
+        </Box>
       </Box>
     );
   }
@@ -26,18 +35,27 @@ const FlagsPage = () => {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", width: "90%" }}
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "90%",
+        }}
       >
         <SideBar>
           <DetailsHeader>
-            <Box sx={{ width: "80%", marginLeft: "4.5em" }}>
+            <Box
+              sx={{
+                width: "80%",
+                marginLeft: "4.5em",
+              }}
+            >
               <Box
                 sx={{
                   width: "70vw",
                   display: "flex",
                   justifyContent: "space-evenly",
                   alignItems: "center",
-                  height: "100vh",
+                  height: "70vh",
                 }}
               >
                 <Box
@@ -134,8 +152,9 @@ const FlagsPage = () => {
           </DetailsHeader>
         </SideBar>
       </Box>
+      <BackButton />
     </Box>
   );
 };
 
-export default Transition(FlagsPage);
+export default FlagsPage;

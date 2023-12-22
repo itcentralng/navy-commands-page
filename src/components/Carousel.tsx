@@ -1,17 +1,26 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Options } from "@splidejs/splide";
 import React, { ReactNode } from "react";
+import { centralData } from "../../data";
+// import "@splidejs/react-splide/css";
 
-export function generateSlides(
-  length = 7,
-  sig = 0
-): Array<{ src: string; alt: string }> {
-  return Array.from({ length }).map((value, index) => {
+interface Slide {
+  src: string;
+  alt: string;
+}
+export function generateSlides(length = 7, sig = 0): Slide[] {
+  return Array.from({ length }).map((_, index) => {
     index = sig || index;
 
+    const selectedItems = centralData[0]?.gallery.find(
+      (item) => item.id === 1 // Update this with the desired id
+    );
+
+    const imageSrc = selectedItems?.image1[index] || ""; // Update index as needed
+
     return {
-      src: `https://source.unsplash.com/random/800x450?sig=${index}`,
-      alt: `Image ${index + 1}`,
+      src: imageSrc,
+      alt: ``,
     };
   });
 }
@@ -61,7 +70,7 @@ export class ThumbnailsExample extends React.Component<{}> {
   render(): ReactNode {
     const mainOptions: Options = {
       type: "loop",
-      perPage: 1,
+      perPage: 1.5,
       perMove: 1,
       gap: "1rem",
       pagination: false,
@@ -94,6 +103,9 @@ export class ThumbnailsExample extends React.Component<{}> {
           options={mainOptions}
           ref={this.mainRef}
           aria-labelledby="thumbnail-slider-example"
+          style={{
+            padding: "0 2em",
+          }}
         >
           {this.renderSlides()}
         </Splide>

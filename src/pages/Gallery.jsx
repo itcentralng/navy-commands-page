@@ -1,12 +1,40 @@
 import { Box } from "@mui/material";
 import SideBar from "../components/SideBar";
-import Transition from "../components/transition";
+// import Transition from "../components/transition";
 import "@splidejs/react-splide/css";
 import DetailsHeader from "../components/DetailsHeader";
-import blankRectangle from "../assets/blank-rectangle.svg";
+// import blankRectangle from "../assets/blank-rectangle.svg";
 import { ThumbnailsExample } from "../components/Carousel.tsx";
+import BackButton from "../components/BackButton.jsx";
+import { centralData } from "../../data.js";
+import { useParams } from "react-router-dom";
 
 const Gallery = () => {
+  const { id } = useParams();
+
+  const selectedItem = centralData[0]?.gallery.find(
+    (item) => item.id === Number(id)
+  );
+
+  if (!selectedItem) {
+    // Handle the case where the item is not found
+    return (
+      <Box
+        sx={{
+          marginLeft: "6em",
+          display: "flex",
+          position: "relative",
+        }}
+      >
+        <SideBar></SideBar>
+        <DetailsHeader></DetailsHeader>
+        <Box>
+          <BackButton />
+        </Box>
+      </Box>
+    );
+  }
+
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Box
@@ -80,4 +108,4 @@ const Gallery = () => {
   );
 };
 
-export default Transition(Gallery);
+export default Gallery;

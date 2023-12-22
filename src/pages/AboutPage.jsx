@@ -1,23 +1,35 @@
 import { Box, Typography } from "@mui/material";
 import SideBar from "../components/SideBar";
-import Transition from "../components/transition";
+// import Transition from "../components/transition";
 import { centralData } from "../../data";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import React from "react";
 import DetailsHeader from "../components/DetailsHeader";
+import BackButton from "../components/BackButton";
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
   const { id } = useParams();
 
-  const selectedItem = centralData[0]?.about.find((item) => item.id === Number(id));
+  const selectedItem = centralData[0]?.about.find(
+    (item) => item.id === Number(id)
+  );
 
   if (!selectedItem) {
     // Handle the case where the item is not found
     return (
-      <Box sx={{ marginLeft: "4em" }}>
-        <DetailsHeader>
-          <SideBar />
-        </DetailsHeader>
+      <Box
+        sx={{
+          marginLeft: "6em",
+          display: "flex",
+          position: "relative",
+        }}
+      >
+        <SideBar></SideBar>
+        <DetailsHeader></DetailsHeader>
+        <Box>
+          <BackButton />
+        </Box>
       </Box>
     );
   }
@@ -40,17 +52,19 @@ const AboutPage = () => {
             }}
             key={selectedItem.id}
           >
-            <Box
-              sx={{
+            <motion.div
+              style={{
                 display: "flex",
                 alignItems: "center",
               }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1, ease: "easeIn" }}
             >
               <Typography
                 variant="h2"
                 sx={{
                   color: "#fff",
-                  fontSize: "3rem",
+                  fontSize: "4.375rem",
                   width: "58%",
                   textTransform: "uppercase",
                   fontFamily: "Perpetua Light",
@@ -58,16 +72,21 @@ const AboutPage = () => {
               >
                 {selectedItem.header}
               </Typography>
-              <img src={selectedItem.image} alt="" style={{ width: "4em" }} />
-            </Box>
+              <img
+                src={selectedItem.image}
+                alt=""
+                style={{ width: "6.25rem", marginRight: "1em" }}
+              />
+            </motion.div>
             <Box
               sx={{
                 width: "97%",
-                height: "60vh",
+                height: "50vh",
                 overflow: "auto",
                 scrollbarWidth: "thin", // For Firefox
                 scrollbarColor: "transparent transparent", // For Firefox
                 WebkitOverflowScrolling: "touch",
+                marginTop: "2em",
               }}
             >
               <style>
@@ -91,8 +110,7 @@ const AboutPage = () => {
                 variant="body2"
                 sx={{
                   color: "#fff",
-                  marginTop: "1em",
-                  fontSize: "1.2rem",
+                  fontSize: "1.5rem",
                   width: "100%",
                   fontFamily: "Manrope",
                   lineHeight: "1.8",
@@ -110,8 +128,9 @@ const AboutPage = () => {
           </Box>
         </SideBar>
       </Box>
+      <BackButton />
     </Box>
   );
 };
 
-export default Transition(AboutPage);
+export default AboutPage;
