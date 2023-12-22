@@ -4,6 +4,7 @@ import Transition from "../components/transition";
 import { centralData } from "../../data";
 import { Link, useParams } from "react-router-dom";
 import React from "react";
+import DetailsHeader from "../components/DetailsHeader";
 
 const AboutPage = () => {
   const { id } = useParams();
@@ -14,7 +15,13 @@ const AboutPage = () => {
 
   if (!selectedItem) {
     // Handle the case where the item is not found
-    return <div>Item not found</div>;
+    return (
+      <Box sx={{ marginLeft: "4em" }}>
+        <DetailsHeader>
+          <SideBar />
+        </DetailsHeader>
+      </Box>
+    );
   }
 
   return (
@@ -32,7 +39,6 @@ const AboutPage = () => {
               width: "78%",
               marginLeft: "4.5em",
               marginTop: "5em",
-              position: "relative",
             }}
             key={selectedItem.id}
           >
@@ -55,39 +61,51 @@ const AboutPage = () => {
               </Typography>
               <img src={selectedItem.image} alt="" style={{ width: "4em" }} />
             </Box>
-            <Typography
-              variant="body2"
+            <Box
               sx={{
-                color: "#fff",
-                marginTop: "1em",
-                fontSize: "1.2rem",
-                width: "95%",
-                marginBottom: "18em",
+                width: "97%",
+                height: "60vh",
+                overflow: "auto",
+                scrollbarWidth: "thin", // For Firefox
+                scrollbarColor: "transparent transparent", // For Firefox
+                WebkitOverflowScrolling: "touch",
               }}
             >
-              {selectedItem.text.split("\n").map((line, index) => (
-                <React.Fragment key={index}>
-                  {line}
-                  <p style={{ display: "block", padding: ".2em 0" }}></p>
-                </React.Fragment>
-              ))}
-            </Typography>
-            <Link
-              to="/"
-              style={{
-                textDecoration: "none",
-                color: "#fff",
-                border: "1px solid #fff",
-                position: "absolute",
-                top: "80%",
-                left: "75%",
-                width: "15%",
-                padding: "1.2em 2.5em",
-                borderRadius: "25px",
-              }}
-            >
-              <Box sx={{ textAlign: "center" }}>BACK TO HOME</Box>
-            </Link>
+              <style>
+                {`
+                    /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+                    ::-webkit-scrollbar {
+                      width: 0.2em;
+                    }
+
+                    ::-webkit-scrollbar-thumb {
+                      background-color: transparent;
+                    }
+
+                    /* Optional: Add some styles for the scrollbar track */
+                    ::-webkit-scrollbar-track {
+                      // background-color: #f1f1f1;
+                    }
+                `}
+              </style>
+              <Typography
+                variant="body2"
+                sx={{
+                  color: "#fff",
+                  marginTop: "1em",
+                  fontSize: "1.2rem",
+                  width: "100%",
+                  // marginBottom: "18em",
+                }}
+              >
+                {selectedItem.text.split("\n").map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <p style={{ display: "block", padding: ".2em 0" }}></p>
+                  </React.Fragment>
+                ))}
+              </Typography>
+            </Box>
           </Box>
         </SideBar>
       </Box>

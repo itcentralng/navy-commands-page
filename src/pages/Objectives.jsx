@@ -16,7 +16,13 @@ const Objectives = () => {
   console.log("Selected Item:", selectedItem); // Add this line
 
   if (!selectedItem) {
-    return <div>Item not found</div>;
+    return (
+      <Box sx={{ marginLeft: "4em" }}>
+        <DetailsHeader>
+          <SideBar />
+        </DetailsHeader>
+      </Box>
+    );
   }
 
   return (
@@ -42,23 +48,51 @@ const Objectives = () => {
               >
                 {selectedItem.header}
               </Typography>
-              <Typography
-                key={selectedItem.id}
-                variant="body2"
+              <Box
                 sx={{
-                  color: "#fff",
-                  fontSize: "1.2rem",
-                  marginBottom: "1.2em",
-                  width: "100%",
+                  width: "97%",
+                  height: "60vh",
+                  overflow: "auto",
+                  scrollbarWidth: "thin", // For Firefox
+                  scrollbarColor: "transparent transparent", // For Firefox
+                  WebkitOverflowScrolling: "touch",
                 }}
               >
-                {selectedItem.text.split("\n").map((line, index) => (
-                  <React.Fragment key={index}>
-                    {line}
-                    <p style={{ display: "block", padding: ".2em 0" }}></p>
-                  </React.Fragment>
-                ))}
-              </Typography>
+                <style>
+                  {`
+                    /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+                    ::-webkit-scrollbar {
+                      width: 0.2em;
+                    }
+
+                    ::-webkit-scrollbar-thumb {
+                      background-color: transparent;
+                    }
+
+                    /* Optional: Add some styles for the scrollbar track */
+                    ::-webkit-scrollbar-track {
+                      // background-color: #f1f1f1;
+                    }
+                `}
+                </style>
+                <Typography
+                  key={selectedItem.id}
+                  variant="body2"
+                  sx={{
+                    color: "#fff",
+                    fontSize: "1.2rem",
+                    marginBottom: "1.2em",
+                    width: "100%",
+                  }}
+                >
+                  {selectedItem.text.split("\n").map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <p style={{ display: "block", padding: ".2em 0" }}></p>
+                    </React.Fragment>
+                  ))}
+                </Typography>
+              </Box>
             </Box>
           </DetailsHeader>
         </SideBar>

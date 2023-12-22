@@ -80,17 +80,4 @@ const Gallery = () => {
   );
 };
 
-const imageList = [
-  { id: 1, image: blankRectangle },
-  { id: 2, image: blankRectangle },
-  { id: 3, image: blankRectangle },
-  { id: 4, image: blankRectangle },
-  { id: 5, image: blankRectangle },
-  { id: 6, image: blankRectangle },
-  { id: 7, image: blankRectangle },
-  { id: 8, image: blankRectangle },
-  { id: 9, image: blankRectangle },
-  { id: 10, image: blankRectangle },
-];
-
 export default Transition(Gallery);

@@ -15,7 +15,7 @@ const DetailsHeader = ({ children }) => {
         sx={{
           display: "flex",
           justifyContent: "flex-end",
-          width: "100%",
+          width: "95%",
         }}
       >
         <img

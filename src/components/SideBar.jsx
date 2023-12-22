@@ -8,7 +8,7 @@ import gallery from "../assets/gallery.svg";
 import flag from "../assets/flag.svg";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { sidebarLinks } from "../../data";
-
+import DetailsHeader from "./DetailsHeader";
 const SideBar = ({ children }) => {
   const location = useLocation();
   const { id } = useParams();
@@ -18,14 +18,22 @@ const SideBar = ({ children }) => {
   );
 
   if (!selectedItem) {
-    return <div>Item not found</div>;
+    return (
+      <Box>
+        <DetailsHeader>
+          <SideBar />
+        </DetailsHeader>
+      </Box>
+    );
   }
 
   return (
     <Box
       sx={{
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "start",
+        marginLeft: "1em",
+        position: "relative",
       }}
     >
       <Box sx={{ width: "20%" }}>
@@ -71,6 +79,22 @@ const SideBar = ({ children }) => {
           </Link>
         ))}
       </Box>
+      <Link
+        to="/"
+        style={{
+          textDecoration: "none",
+          color: "#fff",
+          border: "1px solid #fff",
+          position: "absolute",
+          top: "80%",
+          left: "75%",
+          width: "15%",
+          padding: "1.2em 2.5em",
+          borderRadius: "25px",
+        }}
+      >
+        <Box sx={{ textAlign: "center" }}>BACK TO HOME</Box>
+      </Link>
       {children}
     </Box>
   );

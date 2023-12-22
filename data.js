@@ -43,7 +43,7 @@ export const centralData = [
     objective: [
       {
         id: 1,
-        header: "BENEFITS OF THE NIGERIAN NAVY CENTRAL COMMAND",
+        header: "OBJECTIVES OF THE NIGERIAN NAVY CENTRAL COMMAND",
         text: `a. Traditional naval duties at sea.
 \n      
         b. Employment   and   deployment   of   vessels,   personnel   and   material to effectively   police   and   protect   the   numerous   rigs,   platforms,   oil installations, creeks and adjoining rivers in its AOR.
@@ -60,7 +60,7 @@ export const centralData = [
       },
       {
         id: 5,
-        header: "BENEFITS OF THE NIGERIAN NAVY TRAINING BASE",
+        header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
         text: `a. To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
 \n
         b. To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.

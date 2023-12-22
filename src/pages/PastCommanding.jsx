@@ -14,7 +14,13 @@ const PastCommanding = () => {
 
   if (!selectedItem) {
     // Handle the case where the item is not found
-    return <div>Item not found</div>;
+    return (
+      <Box sx={{ marginLeft: "4em" }}>
+        <DetailsHeader>
+          <SideBar />
+        </DetailsHeader>
+      </Box>
+    );
   }
 
   return (
