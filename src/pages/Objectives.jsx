@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { centralData } from "../../data";
 import React from "react";
 import BackButton from "../components/BackButton";
+import { motion } from "framer-motion";
 
 const Objectives = () => {
   const { id } = useParams();
@@ -27,9 +28,14 @@ const Objectives = () => {
       >
         <SideBar></SideBar>
         <DetailsHeader></DetailsHeader>
-        <Box>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+        >
           <BackButton />
-        </Box>
+        </motion.div>
       </Box>
     );
   }
@@ -41,11 +47,15 @@ const Objectives = () => {
       >
         <SideBar>
           <DetailsHeader>
-            <Box
-              sx={{
+            <motion.div
+              style={{
                 width: "80%",
                 marginLeft: "4.5em",
               }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1, ease: "easeIn" }}
             >
               <Typography
                 variant="h2"
@@ -105,7 +115,7 @@ const Objectives = () => {
                   ))}
                 </Typography>
               </Box>
-            </Box>
+            </motion.div>
           </DetailsHeader>
         </SideBar>
       </Box>

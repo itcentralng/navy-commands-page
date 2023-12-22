@@ -8,6 +8,7 @@ import { ThumbnailsExample } from "../components/Carousel.tsx";
 import BackButton from "../components/BackButton.jsx";
 import { centralData } from "../../data.js";
 import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Gallery = () => {
   const { id } = useParams();
@@ -28,9 +29,14 @@ const Gallery = () => {
       >
         <SideBar></SideBar>
         <DetailsHeader></DetailsHeader>
-        <Box>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+        >
           <BackButton />
-        </Box>
+        </motion.div>
       </Box>
     );
   }
@@ -47,13 +53,17 @@ const Gallery = () => {
       >
         <SideBar>
           <DetailsHeader>
-            <Box
-              sx={{
+            <motion.div
+              style={{
                 width: "77vw",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
               }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1, ease: "easeIn" }}
             >
               {/* <Splide
                 options={{
@@ -100,7 +110,7 @@ const Gallery = () => {
               <Box sx={{}}>
                 <ThumbnailsExample />
               </Box>
-            </Box>
+            </motion.div>
           </DetailsHeader>
         </SideBar>
       </Box>

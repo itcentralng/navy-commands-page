@@ -2,7 +2,8 @@
 import { Box, Typography } from "@mui/material";
 import DisplayCard from "../components/DisplayCard";
 import Header from "../components/Header";
-import Transition from "../components/transition";
+// import Transition from "../components/transition";
+import { motion } from "framer-motion";
 
 const HeroPage = () => {
   return (
@@ -26,14 +27,18 @@ const HeroPage = () => {
             flexDirection: "column",
           }}
         >
-          <Box
-            sx={{
+          <motion.div
+            style={{
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
               alignItems: "center",
               height: "100%",
             }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1, ease: "easeIn" }}
           >
             <Box>
               <Typography
@@ -84,11 +89,11 @@ const HeroPage = () => {
                 <DisplayCard />
               </Box>
             </Box>
-          </Box>
+          </motion.div>
         </Box>
       </Box>
     </Header>
   );
 };
 
-export default Transition(HeroPage);
+export default HeroPage;

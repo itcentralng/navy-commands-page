@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import SideBar from "../components/SideBar";
 import DetailsHeader from "../components/DetailsHeader";
 import BackButton from "../components/BackButton";
+import { motion } from "framer-motion";
 
 const Department = () => {
   return (
@@ -14,9 +15,14 @@ const Department = () => {
     >
       <SideBar></SideBar>
       <DetailsHeader></DetailsHeader>
-      <Box>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1, ease: "easeIn" }}
+      >
         <BackButton />
-      </Box>
+      </motion.div>
     </Box>
   );
 };

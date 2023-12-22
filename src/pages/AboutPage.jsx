@@ -18,19 +18,23 @@ const AboutPage = () => {
   if (!selectedItem) {
     // Handle the case where the item is not found
     return (
-      <Box
+      <motion.div
         sx={{
           marginLeft: "6em",
           display: "flex",
           position: "relative",
         }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1, ease: "easeIn" }}
       >
         <SideBar></SideBar>
         <DetailsHeader></DetailsHeader>
         <Box>
           <BackButton />
         </Box>
-      </Box>
+      </motion.div>
     );
   }
 
@@ -44,21 +48,23 @@ const AboutPage = () => {
         }}
       >
         <SideBar>
-          <Box
-            sx={{
+          <motion.div
+            style={{
               width: "78%",
               marginLeft: "4.5em",
               marginTop: "5em",
             }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1, ease: "easeIn" }}
             key={selectedItem.id}
           >
-            <motion.div
-              style={{
+            <Box
+              sx={{
                 display: "flex",
                 alignItems: "center",
               }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1, ease: "easeIn" }}
             >
               <Typography
                 variant="h2"
@@ -77,7 +83,7 @@ const AboutPage = () => {
                 alt=""
                 style={{ width: "6.25rem", marginRight: "1em" }}
               />
-            </motion.div>
+            </Box>
             <Box
               sx={{
                 width: "97%",
@@ -125,7 +131,7 @@ const AboutPage = () => {
                 ))}
               </Typography>
             </Box>
-          </Box>
+          </motion.div>
         </SideBar>
       </Box>
       <BackButton />
