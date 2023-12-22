@@ -55,7 +55,7 @@ const Objectives = () => {
                 {selectedItem.text.split("\n").map((line, index) => (
                   <React.Fragment key={index}>
                     {line}
-                    <br />
+                    <p style={{ display: "block", padding: ".2em 0" }}></p>
                   </React.Fragment>
                 ))}
               </Typography>

@@ -3,9 +3,21 @@ import SideBar from "../components/SideBar";
 import Transition from "../components/transition";
 import DetailsHeader from "../components/DetailsHeader";
 import nigNavy from "../assets/nignavy.svg";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { centralData } from "../../data";
 
 const FlagsPage = () => {
+  const { id } = useParams();
+
+  const selectedItem = centralData[0]?.flagsPage.find(
+    (item) => item.id === Number(id)
+  );
+
+  if (!selectedItem) {
+    // Handle the case where the item is not found
+    return <div>Item not found</div>;
+  }
+
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Box
@@ -32,7 +44,7 @@ const FlagsPage = () => {
                   }}
                 >
                   <Link
-                    to={`${location.pathname}/past-commanding`}
+                    to={`/past-commanding/${selectedItem.id}`}
                     style={{
                       width: "100%",
                       height: "100%",
@@ -51,7 +63,7 @@ const FlagsPage = () => {
                         textAlign: "center",
                       }}
                     >
-                      <img src={nigNavy} alt="" />
+                      <img src={selectedItem.image1} alt="" />
                       <Typography
                         variant="body2"
                         sx={{
@@ -96,7 +108,7 @@ const FlagsPage = () => {
                         textAlign: "center",
                       }}
                     >
-                      <img src={nigNavy} alt="" />
+                      <img src={selectedItem.image2} alt="" />
                       <Typography
                         variant="body2"
                         sx={{

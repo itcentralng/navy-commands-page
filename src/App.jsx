@@ -1,5 +1,5 @@
 import HeroPage from "./pages/HeroPage";
-import { Route, Routes, useLocation, useParams } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Box } from "@mui/material";
 import backgroundImage from "./assets/BackgroundImg.svg";
 import AboutPage from "./pages/AboutPage";
@@ -27,10 +27,12 @@ const App = () => {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HeroPage />} />
           <Route path="/about/:id" element={<AboutPage />} />
+          <Route path="/departments/:id" element={<AboutPage />} />
           <Route path="/objectives/:id" element={<Objectives />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/flag" element={<FlagsPage />} />
-          <Route path="/flag/past-commanding" element={<PastCommanding />} />
+          <Route path="/structures/:id" element={<Objectives />} />
+          <Route path="/gallery/:id" element={<Gallery />} />
+          <Route path="/flag/:id" element={<FlagsPage />} />
+          <Route path={`/past-commanding/:id`} element={<PastCommanding />} />
         </Routes>
       </AnimatePresence>
     </Box>

@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import SideBar from "../components/SideBar";
 import Transition from "../components/transition";
 import { centralData } from "../../data";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import React from "react";
 
 const AboutPage = () => {
@@ -20,11 +20,20 @@ const AboutPage = () => {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", width: "90%" }}
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "90%",
+        }}
       >
         <SideBar>
           <Box
-            sx={{ width: "78%", marginLeft: "4.5em", marginTop: "5em" }}
+            sx={{
+              width: "78%",
+              marginLeft: "4.5em",
+              marginTop: "5em",
+              position: "relative",
+            }}
             key={selectedItem.id}
           >
             <Box
@@ -38,7 +47,8 @@ const AboutPage = () => {
                 sx={{
                   color: "#fff",
                   fontSize: "3rem",
-                  width: "57%",
+                  width: "58%",
+                  textTransform: "uppercase",
                 }}
               >
                 {selectedItem.header}
@@ -49,17 +59,35 @@ const AboutPage = () => {
               variant="body2"
               sx={{
                 color: "#fff",
-                marginTop: "2.5em",
+                marginTop: "1em",
                 fontSize: "1.2rem",
+                width: "95%",
+                marginBottom: "18em",
               }}
             >
               {selectedItem.text.split("\n").map((line, index) => (
                 <React.Fragment key={index}>
                   {line}
-                  <br />
+                  <p style={{ display: "block", padding: ".2em 0" }}></p>
                 </React.Fragment>
               ))}
             </Typography>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "#fff",
+                border: "1px solid #fff",
+                position: "absolute",
+                top: "80%",
+                left: "75%",
+                width: "15%",
+                padding: "1.2em 2.5em",
+                borderRadius: "25px",
+              }}
+            >
+              <Box sx={{ textAlign: "center" }}>BACK TO HOME</Box>
+            </Link>
           </Box>
         </SideBar>
       </Box>

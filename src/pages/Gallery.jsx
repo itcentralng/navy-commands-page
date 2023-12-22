@@ -9,6 +9,8 @@ import gallery4 from "../assets/gallery4.svg";
 import gallery5 from "../assets/gallery5.svg";
 import "@splidejs/react-splide/css";
 import DetailsHeader from "../components/DetailsHeader";
+import blankRectangle from "../assets/blank-rectangle.svg";
+import { ThumbnailsExample } from "../components/Carousel.tsx";
 
 const Gallery = () => {
   return (
@@ -23,8 +25,15 @@ const Gallery = () => {
       >
         <SideBar>
           <DetailsHeader>
-            <Box sx={{ width: "100%" }}>
-              <Splide
+            <Box
+              sx={{
+                width: "77vw",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              {/* <Splide
                 options={{
                   type: "loop",
                   autoplay: true,
@@ -49,8 +58,8 @@ const Gallery = () => {
                     <img src={item.image} alt="" style={{ width: "50%" }} />
                   </SplideSlide>
                 ))}
-              </Splide>
-              <Box
+              </Splide> */}
+              {/* <Box
                 sx={{
                   display: "flex",
                   marginTop: "2em",
@@ -65,6 +74,9 @@ const Gallery = () => {
                     style={{ width: "5.5em" }}
                   />
                 ))}
+              </Box> */}
+              <Box sx={{}}>
+                <ThumbnailsExample />
               </Box>
             </Box>
           </DetailsHeader>
@@ -75,16 +87,16 @@ const Gallery = () => {
 };
 
 const imageList = [
-  { id: 1, image: gallery1 },
-  { id: 2, image: gallery2 },
-  { id: 3, image: gallery3 },
-  { id: 4, image: gallery4 },
-  { id: 5, image: gallery5 },
-  { id: 6, image: gallery1 },
-  { id: 7, image: gallery2 },
-  { id: 8, image: gallery3 },
-  { id: 9, image: gallery4 },
-  { id: 10, image: gallery5 },
+  { id: 1, image: blankRectangle },
+  { id: 2, image: blankRectangle },
+  { id: 3, image: blankRectangle },
+  { id: 4, image: blankRectangle },
+  { id: 5, image: blankRectangle },
+  { id: 6, image: blankRectangle },
+  { id: 7, image: blankRectangle },
+  { id: 8, image: blankRectangle },
+  { id: 9, image: blankRectangle },
+  { id: 10, image: blankRectangle },
 ];
 
 export default Transition(Gallery);

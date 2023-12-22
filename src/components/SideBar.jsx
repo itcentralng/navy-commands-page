@@ -93,13 +93,13 @@ const buttonItem = [
     id: 3,
     image: departments,
     text: "Departments",
-    pageLink: "about",
+    pageLink: "departments",
   },
   {
     id: 4,
     image: structures,
     text: "Structures",
-    pageLink: "objectives",
+    pageLink: "structures",
   },
   {
     id: 5,
