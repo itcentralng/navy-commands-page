@@ -30,6 +30,17 @@ export const centralData = [
         image: central,
       },
       {
+        id: 2,
+        header: "The Nigerian Naval Doctrine Command",
+        text: `
+               
+                Naval doctrine provides the foundation upon which navies are organized, trained, equipped, and deployed. It also sets the basis for assessment and improvement of standards for personnel and equipment, hence the need for emplacement of doctrines for regular assessment of activities and procedures in the Nigerian Navy (NN). To achieve this, efforts were made in the past including the establishment of Naval Training Command, Directorate of Inspection Doctrine and Research, Sea Training Command, and Naval Doctrine and Assessment Centre (NDAC).
+\n
+                The structure and mandate of NDAC as a field unit showed inherent limitations that impede the center's effectiveness. It is, therefore, imperative for the NN to institute an enduring establishment to formulate and superintend over the implementation of principles, practices, techniques as well as procedures of naval operations, consistent with the NN Doctrine. Accordingly, Navy Board 4 of 2021 approved the establishment of a Doctrine Command with its headquarters to be located at NN's land in Epe, Lagos State, and to take over roles of NDAC, among other responsibilities. In order to give effect to the decision of the Navy Board, this NNO hereby promulgates the establishment of the Command and sets out its modus operandi. The Command shall be known as the Naval Doctrine Command (NAVDOC).
+        `,
+        image: nigNavy,
+      },
+      {
         id: 5,
         header: "The Nigerian Navy Training Base",
         text: `The Naval Training Command (NAVTRAC) is hereby established for the centralized control, execution and superintendence of Local Training in the Nigerian Navy, and for the purpose of coordinating and harmonizing the training doctrine, concepts and standards of local Training in Nigeria, including Basic Sea Training for ratings, cadets, officers, the commander will also be responsible for the basic Operational Sea Training (BOST), safety Operational Sea Training (SOST) and Consolidation Operational Sea Training (COST) of the Fleet.`,
@@ -53,6 +64,39 @@ export const centralData = [
         f. Conduct   of   exercises   and   on-the-job-training   of   personnel   towards attaining desirable operational efficiency. 
 \n     
         g. Perform any other duties as may be assigned from time to time by Appropriate Superior Authority.`,
+      },
+      {
+        id: 2,
+        header: "OBJECTIVES OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
+        text: `
+                a. Development and review of doctrines for NN operations.
+                \n
+                b. Assessment of compliance with HSE standards in commands, ships and
+                establishments.
+                \n
+                c. Assessment of training curriculum including post course evaluation in NN professional schools.
+                \n
+                d. Development and implementation of methodologies for assessment of NN operations.
+                \n
+                e. Assessment of combat readiness of ships/units through work-up, Basic Operational Sea Training (BOST), Safety Operational Sea Training (SOST) and Consolidated Operational Sea Training (COST).
+                \n
+                f. Liaison with sister Services and friendly navies on development of joint and combined doctrines.
+                \n
+                g. Providing advice to NHQ on technology acquisition and local capacity building.
+                \n
+                h. Coordination/collaboration with other maritime stakeholders to develop and implement a National Maritime Doctrine.
+                \n
+                i. Publication of books, manuals and BRs relevant to NN operations.
+                \n
+                j. Maintenance of archive and library for preserving records and NN historical development.
+                \n
+                k. Exam, Higher Rate Professional Exam and any other exam as may be directed.
+                \n
+                l. Conduct research on doctrine concept and policy in naval engineering, logistics, administration, training and operations among others.
+                \n
+                m. Conduct research on applications for system development for operational efficiency.
+
+        `,
       },
       {
         id: 5,
@@ -92,6 +136,26 @@ export const centralData = [
         image1: nigNavy,
         image2: nigNavy,
       },
+      {
+        id: 2,
+        image1: nigNavy,
+        image2: nigNavy,
+      },
+      {
+        id: 3,
+        image1: nigNavy,
+        image2: nigNavy,
+      },
+      {
+        id: 4,
+        image1: nigNavy,
+        image2: nigNavy,
+      },
+      {
+        id: 5,
+        image1: nigNavy,
+        image2: nigNavy,
+      },
     ],
     pastCommanding: [
       {
@@ -102,10 +166,86 @@ export const centralData = [
         image4: blankSquare,
         image5: blankSquare,
       },
+      {
+        id: 2,
+        image1: blankSquare,
+        image2: blankSquare,
+        image3: blankSquare,
+        image4: blankSquare,
+        image5: blankSquare,
+      },
+      {
+        id: 3,
+        image1: blankSquare,
+        image2: blankSquare,
+        image3: blankSquare,
+        image4: blankSquare,
+        image5: blankSquare,
+      },
+      {
+        id: 4,
+        image1: blankSquare,
+        image2: blankSquare,
+        image3: blankSquare,
+        image4: blankSquare,
+        image5: blankSquare,
+      },
+      {
+        id: 5,
+        image1: blankSquare,
+        image2: blankSquare,
+        image3: blankSquare,
+        image4: blankSquare,
+        image5: blankSquare,
+      },
     ],
     gallery: [
       {
         id: 1,
+        image1: [
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+        ],
+      },
+      {
+        id: 2,
+        image1: [
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+        ],
+      },
+      {
+        id: 3,
+        image1: [
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+        ],
+      },
+      {
+        id: 4,
+        image1: [
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+          blankSquare,
+        ],
+      },
+      {
+        id: 5,
         image1: [
           blankSquare,
           blankSquare,

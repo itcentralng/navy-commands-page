@@ -28,7 +28,14 @@ const Header = ({ children }) => {
               fontFamily: "'Lato', sans-serif",
             }}
           >
-            <Link to="/" style={{ textDecoration: "none", color: "#fff", fontFamily: "Lato" }}>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "#fff",
+                fontFamily: "Lato",
+              }}
+            >
               NAVY COMMANDS
             </Link>
           </Typography>

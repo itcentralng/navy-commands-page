@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import central from "../assets/central.svg";
-import eastern from "../assets/eastern.svg";
+import nignavy from "../assets/nignavy.svg";
 import western from "../assets/western.svg";
 import logistic from "../assets/logistic.svg";
 import training from "../assets/training.svg";
@@ -70,7 +70,7 @@ const data = [
   },
   {
     id: 2,
-    front: eastern,
+    front: nignavy,
     lowerText: "Eastern Naval Command",
     height: "9.2105rem",
     width: "6.25rem",

@@ -121,7 +121,7 @@ const FlagsPage = () => {
                   }}
                 >
                   <Link
-                    to={`${location.pathname}/past-commanding`}
+                    to={`/past-commanding/${selectedItem.id}`}
                     style={{
                       width: "100%",
                       height: "100%",
