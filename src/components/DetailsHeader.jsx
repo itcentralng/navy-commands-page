@@ -9,9 +9,7 @@ import BackButton from "./BackButton";
 const DetailsHeader = ({ children }) => {
   const { id } = useParams();
 
-  const selectedItem = centralData[0]?.about.find(
-    (item) => item.id === Number(id)
-  );
+  const selectedItem = centralData[0]?.about.find((item) => item.id === Number(id));
 
   if (!selectedItem) {
     // Handle the case where the item is not found
@@ -27,11 +25,11 @@ const DetailsHeader = ({ children }) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 1, ease: "easeIn" }}
       >
-        <SideBar></SideBar>
+        {/* <SideBar></SideBar>
         <DetailsHeader></DetailsHeader>
         <Box>
           <BackButton />
-        </Box>
+        </Box> */}
       </motion.div>
     );
   }
@@ -51,11 +49,7 @@ const DetailsHeader = ({ children }) => {
           width: "95%",
         }}
       >
-        <img
-          src={selectedItem.image}
-          alt=""
-          style={{ width: "6.25rem", justifySelf: "end" }}
-        />
+        <img src={selectedItem.image} alt="" style={{ width: "6.25rem", justifySelf: "end" }} />
       </Box>
       {children}
     </Box>
