@@ -77,6 +77,7 @@ export class ThumbnailsExample extends React.Component<{}> {
       // gap: "1rem",
       pagination: false,
       arrows: false,
+      padding: "2rem",
     };
 
     const thumbsOptions: Options = {
@@ -96,7 +97,7 @@ export class ThumbnailsExample extends React.Component<{}> {
       <div
         className="wrapper"
         style={{
-          width: "70vw",
+          width: "65vw",
           display: "flex",
           flexDirection: "column",
         }}

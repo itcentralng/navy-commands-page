@@ -1,11 +1,20 @@
 import { Box } from "@mui/material";
 import SideBar from "../components/SideBar";
-// import Transition from "../components/transition";
 import DetailsHeader from "../components/DetailsHeader";
 import { useParams } from "react-router-dom";
 import { centralData } from "../../data";
 import BackButton from "../components/BackButton";
 import { motion } from "framer-motion";
+import "@splidejs/react-splide/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+import "./styles.css";
+
+import { EffectCoverflow } from "swiper/modules";
 
 const PastCommanding = () => {
   const { id } = useParams();
@@ -52,16 +61,17 @@ const PastCommanding = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 1, ease: "easeIn" }}
             >
-              <Box
-                sx={{
-                  width: "70vw",
+              <div
+                className="splide_div"
+                style={{
+                  border: "1px solid red",
                   display: "flex",
-                  justifyContent: "space-evenly",
-                  alignItems: "center",
-                  height: "100vh",
+                  flexDirection: "column",
+                  width: "73vw",
+                  justifyContent: "center",
                 }}
               >
-                <Box
+                {/* <Box
                   sx={{
                     display: "flex",
                     justifyContent: "space-between",
@@ -93,8 +103,42 @@ const PastCommanding = () => {
                     alt=""
                     style={{ width: "13%" }}
                   />
-                </Box>
-              </Box>
+                </Box> */}
+
+                <div className="container">
+                  <Swiper
+                    effect={"coverflow"}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={"auto"}
+                    coverflowEffect={{
+                      rotate: 0,
+                      stretch: 0,
+                      depth: 100,
+                      modifier: 1,
+                    }}
+                    spaceBetween={100}
+                    modules={[EffectCoverflow]}
+                    className="mySwiper"
+                  >
+                    <SwiperSlide>
+                      <img src={selectedItem.image1} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={selectedItem.image2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={selectedItem.image3} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={selectedItem.image4} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={selectedItem.image5} />
+                    </SwiperSlide>
+                  </Swiper>
+                </div>
+              </div>
             </motion.div>
           </DetailsHeader>
         </SideBar>
