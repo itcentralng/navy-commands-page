@@ -8,7 +8,7 @@ interface Slide {
   src: string;
   alt: string;
 }
-export function generateSlides(length = 7, sig = 0): Slide[] {
+export function generateSlides(length = 6, sig = 0): Slide[] {
   return Array.from({ length }).map((_, index) => {
     index = sig || index;
 
@@ -17,10 +17,12 @@ export function generateSlides(length = 7, sig = 0): Slide[] {
     );
 
     const imageSrc = selectedItems?.image1[index] || ""; // Update index as needed
+    const imageAlt = selectedItems?.alt || "";
 
     return {
       src: imageSrc,
-      alt: ``,
+      alt: imageAlt,
+      id: `slide-${index}`,
     };
   });
 }
@@ -56,7 +58,7 @@ export class ThumbnailsExample extends React.Component<{}> {
    */
   renderSlides(): ReactNode[] {
     return generateSlides().map((slide) => (
-      <SplideSlide key={slide.src}>
+      <SplideSlide key={slide.alt}>
         <img src={slide.src} alt={slide.alt} />
       </SplideSlide>
     ));
@@ -70,9 +72,9 @@ export class ThumbnailsExample extends React.Component<{}> {
   render(): ReactNode {
     const mainOptions: Options = {
       type: "loop",
-      perPage: 1.5,
-      perMove: 1,
-      gap: "1rem",
+      perPage: 3,
+      // perMove: 1,
+      // gap: "1rem",
       pagination: false,
       arrows: false,
     };
@@ -94,7 +96,7 @@ export class ThumbnailsExample extends React.Component<{}> {
       <div
         className="wrapper"
         style={{
-          width: "50vw",
+          width: "70vw",
           display: "flex",
           flexDirection: "column",
         }}
@@ -103,9 +105,6 @@ export class ThumbnailsExample extends React.Component<{}> {
           options={mainOptions}
           ref={this.mainRef}
           aria-labelledby="thumbnail-slider-example"
-          style={{
-            padding: "0 2em",
-          }}
         >
           {this.renderSlides()}
         </Splide>

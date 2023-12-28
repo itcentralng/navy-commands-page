@@ -8,7 +8,6 @@ import gallery from "../assets/gallery.svg";
 import flag from "../assets/flag.svg";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { sidebarLinks } from "../../data";
-import DetailsHeader from "./DetailsHeader";
 const SideBar = ({ children }) => {
   const location = useLocation();
   const { id } = useParams();
@@ -20,9 +19,10 @@ const SideBar = ({ children }) => {
   if (!selectedItem) {
     return (
       <Box>
-        <DetailsHeader>
+        {/* <DetailsHeader>
           <SideBar />
-        </DetailsHeader>
+        </DetailsHeader> */}
+        <h1>No details found</h1>
       </Box>
     );
   }
@@ -45,7 +45,7 @@ const SideBar = ({ children }) => {
               width: "100%",
               height: "100%",
             }}
-            key={selectedItem.id}
+            key={item.id}
           >
             <Button
               disableRipple

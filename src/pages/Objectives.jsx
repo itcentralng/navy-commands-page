@@ -10,12 +10,10 @@ import { motion } from "framer-motion";
 
 const Objectives = () => {
   const { id } = useParams();
-  console.log("Current id:", id); // Add this line
 
   const selectedItem = centralData[0]?.objective.find(
     (item) => item.id === Number(id)
   );
-  console.log("Selected Item:", selectedItem); // Add this line
 
   if (!selectedItem) {
     return (
@@ -98,6 +96,7 @@ const Objectives = () => {
                 <Typography
                   key={selectedItem.id}
                   variant="body2"
+                  component={"div"}
                   sx={{
                     color: "#fff",
                     fontSize: "1.5rem",

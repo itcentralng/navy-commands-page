@@ -114,6 +114,7 @@ const Gallery = () => {
           </DetailsHeader>
         </SideBar>
       </Box>
+      <BackButton />
     </Box>
   );
 };

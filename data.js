@@ -1,15 +1,23 @@
 import central from "./src/assets/central.svg";
 import training from "./src/assets/training.svg";
-import blankSquare from "./src/assets/blank-rectangle.svg";
-import nigNavy from "./src/assets/nignavy.svg";
+import western from "./src/assets/western.svg";
+import blankSquare1 from "./src/assets/blank-rectangle.svg";
+import blankSquare2 from "./src/assets/blank-rectangle.svg";
+import blankSquare3 from "./src/assets/blank-rectangle.svg";
+import blankSquare4 from "./src/assets/blank-rectangle.svg";
+import blankSquare5 from "./src/assets/blank-rectangle.svg";
+import blankSquare6 from "./src/assets/blank-rectangle.svg";
+import nigNavy1 from "./src/assets/nignavy.svg";
+import nigNavy2 from "./src/assets/nignavy.svg";
+import logistic from "./src/assets/logistic.svg";
 
 export const sidebarLinks = [
   {
     linkId: [
       { id: 1, link: "about" },
       { id: 2, link: "objectives" },
-      { id: 3, link: "about" },
-      { id: 4, link: "objectives" },
+      { id: 3, link: "departments" },
+      { id: 4, link: "structures" },
       { id: 5, link: "flag" },
       { id: 6, link: "gallery" },
     ],
@@ -38,7 +46,32 @@ export const centralData = [
 \n
                 The structure and mandate of NDAC as a field unit showed inherent limitations that impede the center's effectiveness. It is, therefore, imperative for the NN to institute an enduring establishment to formulate and superintend over the implementation of principles, practices, techniques as well as procedures of naval operations, consistent with the NN Doctrine. Accordingly, Navy Board 4 of 2021 approved the establishment of a Doctrine Command with its headquarters to be located at NN's land in Epe, Lagos State, and to take over roles of NDAC, among other responsibilities. In order to give effect to the decision of the Navy Board, this NNO hereby promulgates the establishment of the Command and sets out its modus operandi. The Command shall be known as the Naval Doctrine Command (NAVDOC).
         `,
-        image: nigNavy,
+        image: nigNavy1,
+      },
+      {
+        id: 3,
+        header: "The Nigerian Naval Ship Quorra",
+        text: `
+        Nigeria Navy training institutions are gradually aggregated into a training command, overseeing overall training policy, doctrine, and control, excluding the Nigerian Naval College, ONURA. 
+       \n
+        Schools within bases or Area Commands will be administered by the respective base or Area Commander as appropriate.
+       \n
+        NNS QUORRA,In accordance with this policy, the Apapa Blomu Training complex, is commissioned into a training establishment called Nigerian Naval Ship QUORRA, overseeing various schools including Basic and Divisional School, Diving School, Gunnery School, Navigation and Direction School, Signal School, Tactical School, Torpedo Anti – Submarine School, Medical Staff Training School, and Instructional Technique School. 
+        \n
+        Meanwhile, NNS QUORHA will be expected to draw up a comprehensive training doctrine for the Nigerian Navy and review same when necessary.
+               `,
+        image: western,
+      },
+      {
+        id: 4,
+        header: "The Nigerian Naval Logistics Command",
+        text: `
+               
+                Over the years, the Nigerian Navy (NN) has separated fleet support services from logistic support services to improve its operational efficiency. As a result, the administrative control of logistics is split between the Maintenance Corps (FMC) and the Logistic Corps. However, challenges in this arrangement have adversely affected the ability to provide adequate logistics support for naval operations. Other limitations of the current logistic system in the NN include a lack of a career profession for a body of well-trained logistics officers and a separation between maintenance and supply of spare parts.
+\n
+                In order to address these issues and ensure more practical and result-oriented fleet and logistic support for sustained naval operations, there is a need for the NN to adopt an integrated approach. Consequently, to have a functional and efficient response to the military challenges of an ever-expanding scope, the Logistics Command (NNLC) is hereby established. The task of the NNLC is to preserve, maintain, and sustain systems in a state of operational readiness and at minimum cost, consistent with mission requirements. 
+               `,
+        image: logistic,
       },
       {
         id: 5,
@@ -98,6 +131,41 @@ export const centralData = [
 
         `,
       },
+      // {
+      //   id: 3,
+      //   header: "",
+      //   text: ``,
+      // },
+      {
+        id: 4,
+        header: "OBJECTIVES OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
+        text: `
+                a. Executing NN policies for acquisition and maintenance of capital assets.
+                \n
+                b. Establishing and monitoring repair and maintenance procedures, schedules, and standards including maintenance of ships, aircraft, and fixed assets, local and foreign refits of ships. 
+                \n
+                c. Ensuring the application of naval engineering standards to processes related to maintenance of ships and equipment in the NN. 
+                \n
+                d. Identification of local capabilities in support of maintenance tasks, capital projects, and materiel supply. 
+                \n
+                e. Conduct periodic inspections of all fleet maintenance assets and logistics infrastructure. 
+                \n
+                f. Undertake NN acquisitions as directed by the NHQ. 
+                \n
+                g. Procure, store, and distribute technical and naval stores material. Establish and monitor naval material supply procedures, schedules, and standards including periodicity of returns and quality management. 
+                \n
+                h. Monitor and assist operational commands in respect of first and second level maintenance and supply activities. 
+                \n
+                i. Provide storage and tests facilities for POL and all types of lubricants. Ensure the conduct of tests and compliance with safety regulations. 
+                \n
+                j. Accord operational requirements. 
+                \n
+                k. Preserve obsolete naval assets and equipment for later disposal action as may be directed. 
+                \n
+                l. Carry out such other duties and directives as may be given by the NLC.
+
+        `,
+      },
       {
         id: 5,
         header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
@@ -133,126 +201,131 @@ export const centralData = [
     flagsPage: [
       {
         id: 1,
-        image1: nigNavy,
-        image2: nigNavy,
+        image1: nigNavy1,
+        image2: nigNavy2,
       },
       {
         id: 2,
-        image1: nigNavy,
-        image2: nigNavy,
+        image1: nigNavy1,
+        image2: nigNavy2,
       },
       {
         id: 3,
-        image1: nigNavy,
-        image2: nigNavy,
+        image1: nigNavy1,
+        image2: nigNavy2,
       },
       {
         id: 4,
-        image1: nigNavy,
-        image2: nigNavy,
+        image1: nigNavy1,
+        image2: nigNavy2,
       },
       {
         id: 5,
-        image1: nigNavy,
-        image2: nigNavy,
+        image1: nigNavy1,
+        image2: nigNavy2,
       },
     ],
     pastCommanding: [
       {
         id: 1,
-        image1: blankSquare,
-        image2: blankSquare,
-        image3: blankSquare,
-        image4: blankSquare,
-        image5: blankSquare,
+        image1: blankSquare1,
+        image2: blankSquare2,
+        image3: blankSquare3,
+        image4: blankSquare4,
+        image5: blankSquare5,
       },
       {
         id: 2,
-        image1: blankSquare,
-        image2: blankSquare,
-        image3: blankSquare,
-        image4: blankSquare,
-        image5: blankSquare,
+        image1: blankSquare1,
+        image2: blankSquare2,
+        image3: blankSquare3,
+        image4: blankSquare4,
+        image5: blankSquare5,
       },
       {
         id: 3,
-        image1: blankSquare,
-        image2: blankSquare,
-        image3: blankSquare,
-        image4: blankSquare,
-        image5: blankSquare,
+        image1: blankSquare1,
+        image2: blankSquare2,
+        image3: blankSquare3,
+        image4: blankSquare4,
+        image5: blankSquare5,
       },
       {
         id: 4,
-        image1: blankSquare,
-        image2: blankSquare,
-        image3: blankSquare,
-        image4: blankSquare,
-        image5: blankSquare,
+        image1: blankSquare1,
+        image2: blankSquare2,
+        image3: blankSquare3,
+        image4: blankSquare4,
+        image5: blankSquare5,
       },
       {
         id: 5,
-        image1: blankSquare,
-        image2: blankSquare,
-        image3: blankSquare,
-        image4: blankSquare,
-        image5: blankSquare,
+        image1: blankSquare1,
+        image2: blankSquare2,
+        image3: blankSquare3,
+        image4: blankSquare4,
+        image5: blankSquare5,
       },
     ],
     gallery: [
       {
         id: 1,
+        alt: "1",
         image1: [
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
+          blankSquare1,
+          blankSquare2,
+          blankSquare3,
+          blankSquare4,
+          blankSquare5,
+          blankSquare6,
         ],
       },
       {
         id: 2,
+        alt: "2",
         image1: [
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
+          blankSquare1,
+          blankSquare2,
+          blankSquare3,
+          blankSquare4,
+          blankSquare5,
+          blankSquare6,
         ],
       },
       {
         id: 3,
+        alt: "3",
         image1: [
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
+          blankSquare1,
+          blankSquare2,
+          blankSquare3,
+          blankSquare4,
+          blankSquare5,
+          blankSquare6,
         ],
       },
       {
         id: 4,
+        alt: "4",
         image1: [
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
+          blankSquare1,
+          blankSquare2,
+          blankSquare3,
+          blankSquare4,
+          blankSquare5,
+          blankSquare6,
         ],
       },
       {
         id: 5,
+        alt: "5",
         image1: [
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
-          blankSquare,
+          blankSquare1,
+          blankSquare2,
+          blankSquare3,
+          blankSquare4,
+          blankSquare5,
+          blankSquare6,
         ],
       },
     ],

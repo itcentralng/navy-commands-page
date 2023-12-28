@@ -43,3 +43,46 @@
 body {
   overflow: hidden;
 }
+
+/* .splide__slide {
+  flex-shrink: 1;
+}
+
+.is-active img {
+  border: 3px solid red;
+  margin: 0 2em;
+}
+
+.is-visible img {
+  border: 3px solid blue;
+  height: 90%;
+}
+
+.is-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.is-next img {
+  border: 3px solid brown;
+  height: 120%;
+} */
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-active img {
+  height: 70%;
+  transition: all ease-out 0.2s;
+}
+
+.is-next img {
+  opacity: 1;
+  height: 100%;
+  transition: all ease-out 0.2s;
+}

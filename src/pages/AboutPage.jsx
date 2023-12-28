@@ -4,7 +4,6 @@ import SideBar from "../components/SideBar";
 import { centralData } from "../../data";
 import { useParams } from "react-router-dom";
 import React from "react";
-import DetailsHeader from "../components/DetailsHeader";
 import BackButton from "../components/BackButton";
 import { motion } from "framer-motion";
 
@@ -29,11 +28,13 @@ const AboutPage = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 1, ease: "easeIn" }}
       >
-        <SideBar></SideBar>
-        <DetailsHeader></DetailsHeader>
-        <Box>
-          <BackButton />
-        </Box>
+        <Box></Box>
+        <SideBar>
+          {/* <DetailsHeader></DetailsHeader> */}
+          <Box>
+            <BackButton />
+          </Box>
+        </SideBar>
       </motion.div>
     );
   }
@@ -114,6 +115,7 @@ const AboutPage = () => {
               </style>
               <Typography
                 variant="body2"
+                component={"div"}
                 sx={{
                   color: "#fff",
                   fontSize: "1.5rem",
