@@ -39,7 +39,7 @@ export const centralData = [
       },
       {
         id: 2,
-        header: "The Nigerian Naval Doctrine Command",
+        header: "The Nigerian Navy Doctrine Command",
         text: `
                
                 Naval doctrine provides the foundation upon which navies are organized, trained, equipped, and deployed. It also sets the basis for assessment and improvement of standards for personnel and equipment, hence the need for emplacement of doctrines for regular assessment of activities and procedures in the Nigerian Navy (NN). To achieve this, efforts were made in the past including the establishment of Naval Training Command, Directorate of Inspection Doctrine and Research, Sea Training Command, and Naval Doctrine and Assessment Centre (NDAC).
@@ -75,8 +75,8 @@ export const centralData = [
       },
       {
         id: 5,
-        header: "The Nigerian Navy Training Base",
-        text: `The Naval Training Command (NAVTRAC) is hereby established for the centralized control, execution and superintendence of Local Training in the Nigerian Navy, and for the purpose of coordinating and harmonizing the training doctrine, concepts and standards of local Training in Nigeria, including Basic Sea Training for ratings, cadets, officers, the commander will also be responsible for the basic Operational Sea Training (BOST), safety Operational Sea Training (SOST) and Consolidation Operational Sea Training (COST) of the Fleet.`,
+        header: "The Nigerian Navy Training Command",
+        text: `The Naval Training Command (NAVTRAC) is established for the centralized control, execution and superintendence of Local Training in the Nigerian Navy, and for the purpose of coordinating and harmonizing the training doctrine, concepts and standards of local Training in Nigeria, including Basic Sea Training for ratings, cadets, officers, the commander will also be responsible for the basic Operational Sea Training (BOST), safety Operational Sea Training (SOST) and Consolidation Operational Sea Training (COST) of the Fleet.`,
         image: training,
       },
     ],
@@ -271,62 +271,27 @@ export const centralData = [
       {
         id: 1,
         alt: "1",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 2,
         alt: "2",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 3,
         alt: "3",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 4,
         alt: "4",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 5,
         alt: "5",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
     ],
   },
