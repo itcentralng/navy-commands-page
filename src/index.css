@@ -49,6 +49,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.splide__slide img {
+  border-radius: 2rem !important;
+}
 
 .is-active img {
   height: 70%;
