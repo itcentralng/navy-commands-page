@@ -10,16 +10,84 @@ import blankSquare6 from "./src/assets/blank-rectangle.svg";
 import nigNavy1 from "./src/assets/nignavy.svg";
 import nigNavy2 from "./src/assets/nignavy.svg";
 import logistic from "./src/assets/logistic.svg";
+import about from "./src/assets/about.svg";
+import objectives from "./src/assets/objectives.svg";
+import departments from "./src/assets/departments.svg";
+import structures from "./src/assets/structures.svg";
+import gallery from "./src/assets/gallery.svg";
+import flag from "./src/assets/flag.svg";
 
 export const sidebarLinks = [
   {
+    // linkId: [
+    //   { id: 1, link: ["about", "abou", "abo", "ab", "a"] },
+    //   { id: 2, link: "objectives" },
+    //   { id: 3, link: "departments" },
+    //   { id: 4, link: "structures" },
+    //   { id: 5, link: "flag" },
+    //   { id: 6, link: "gallery" },
+    // ],
     linkId: [
-      { id: 1, link: "about" },
-      { id: 2, link: "objectives" },
-      { id: 3, link: "departments" },
-      { id: 4, link: "structures" },
-      { id: 5, link: "flag" },
-      { id: 6, link: "gallery" },
+      {
+        id: 1,
+        link: [
+          "about",
+          "objectives",
+          "AOR",
+          "organizations",
+          "flag",
+          "gallery",
+        ],
+        image: [about, objectives, departments, structures, flag, gallery],
+      },
+      {
+        id: 2,
+        link: [
+          "about",
+          "objectives",
+          "structures",
+          "administration",
+          "flag",
+          "gallery",
+        ],
+        image: [about, objectives, departments, structures, flag, gallery],
+      },
+      {
+        id: 3,
+        link: [
+          "about",
+          "objectives",
+          "structures",
+          "departments",
+          "flag",
+          "gallery",
+        ],
+        image: [about, objectives, departments, structures, flag, gallery],
+      },
+      {
+        id: 4,
+        link: [
+          "about",
+          "objectives",
+          "structures",
+          "departments",
+          "flag",
+          "gallery",
+        ],
+        image: [about, objectives, departments, structures, flag, gallery],
+      },
+      {
+        id: 5,
+        link: [
+          "about",
+          "objectives",
+          "structures",
+          "departments",
+          "flag",
+          "gallery",
+        ],
+        image: [about, objectives, departments, structures, flag, gallery],
+      },
     ],
   },
 ];
@@ -129,6 +197,374 @@ export const centralData = [
                 \n
                 m. Conduct research on applications for system development for operational efficiency.
 
+        `,
+      },
+      // {
+      //   id: 3,
+      //   header: "",
+      //   text: ``,
+      // },
+      {
+        id: 4,
+        header: "OBJECTIVES OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
+        text: `
+                a. Executing NN policies for acquisition and maintenance of capital assets.
+                \n
+                b. Establishing and monitoring repair and maintenance procedures, schedules, and standards including maintenance of ships, aircraft, and fixed assets, local and foreign refits of ships. 
+                \n
+                c. Ensuring the application of naval engineering standards to processes related to maintenance of ships and equipment in the NN. 
+                \n
+                d. Identification of local capabilities in support of maintenance tasks, capital projects, and materiel supply. 
+                \n
+                e. Conduct periodic inspections of all fleet maintenance assets and logistics infrastructure. 
+                \n
+                f. Undertake NN acquisitions as directed by the NHQ. 
+                \n
+                g. Procure, store, and distribute technical and naval stores material. Establish and monitor naval material supply procedures, schedules, and standards including periodicity of returns and quality management. 
+                \n
+                h. Monitor and assist operational commands in respect of first and second level maintenance and supply activities. 
+                \n
+                i. Provide storage and tests facilities for POL and all types of lubricants. Ensure the conduct of tests and compliance with safety regulations. 
+                \n
+                j. Accord operational requirements. 
+                \n
+                k. Preserve obsolete naval assets and equipment for later disposal action as may be directed. 
+                \n
+                l. Carry out such other duties and directives as may be given by the NLC.
+
+        `,
+      },
+      {
+        id: 5,
+        header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
+        text: `a. To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
+\n
+        b. To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.
+\n
+        c. To   establish   and   constantly   update   training   standard compatible with operational performance standards of the Navy.
+\n
+        d. To monitor training standards in the Navy by establishing an appropriate feedback system.
+\n
+        e. To   produce,   review   and   update   training   syllabi,   BRS, handouts and related materials for use in specified area of Naval Training and Training Establishment.
+\n
+        f. To develop and impart training on Instructional Technique to officers and men appointed as Instructors.
+\n
+        g. To develop and suitable training aids and equipment’s.
+\n
+        h. To establish and execute ships’ BOST, SOST and COST progammes as directed by NHQ from time to time.
+\n
+        i. To   formulate   fleet   operational   training   concepts   and tactical doctrines for approval by NHQ.
+\n      
+        j. To conduct cadet and sea training 
+\n      
+        k. To organize workshop, seminare, symposia and lectures on training concepts and tactical doctrines as directed by NHQ.
+\n      
+        l. To   establish   training   programs   and   routines   in schools/ships as appropriate 
+\n      
+        m. To administer two disciplines of Staff and Trainees in Training Schools/Training Establishments and training ships.
+\n      
+        n. To   coordinate   the   preparation   of   Training   Budgets   by Training Established and training ships.`,
+      },
+    ],
+    aor: [
+      {
+        id: 1,
+        header: "AREA OF RESPONSIBILITY FOR THE NIGERIAN NAVY CENTRAL COMMAND",
+        text: `
+                The coastal limits of the AOR is measured from the baseline stretching from the area before River Benin entrance at Longitude 005 00' E to River Santa Barbara entrance at Longitude 0060 30'E, covering a coastal distance of about 156nm. Seaward from the baseline, the AOR of the Command shall encompass the tentorial seas up to the limit of the Exclusive Economic Zone (EEZ) as defined along the limiting longitudes. The coastal states to be covered are Bayelsa and Delta. The landward AOR would include Edo, Kogi and Anambra States.
+\n\n
+                Consequent upon the delineation of CNC, the NNOI is hereby amended and the new AOR for WNC and ENC are defined as follows and as shown at Annex A:
+\n
+                a. WNC. The coastal limits of the WAC AOR shall stretch from the maritime border with the Republic of Benin and encompass Lagos, Ogun and Ondo States up to an area before the river Benin entrance at Longitude 0050 00' E. Within these limits, the seaward AOR shall stretch up to the extent of the nation's EEZ.
+\n
+                b. ENC. The coastal limits of the ENC AOR shall stretch from the maritime border with the Republic of Cameroun and encompass Cross River, Akwa-lbom and Rivers States up to the River Santa Barbara entrance at Longitude 0060 30' E. Within these limits, the seaward AOR shall stretch up to the extent of the nation's EEZ, subject to boundary delimitation agreements with neighboring states.
+\n
+                c. Change of Operational Control. NN ships transiting through or deployed to or from CNC AOR are to CHOP to appropriate operational command on crossing Longitude 0050 00'E or Longitude 0060 30'E.
+
+
+
+        `,
+      },
+      {
+        id: 2,
+        header: "",
+        text: `
+               `,
+      },
+      {
+        id: 3,
+        header: "",
+        text: ``,
+      },
+      {
+        id: 4,
+        header: "",
+        text: `
+                
+        `,
+      },
+      {
+        id: 5,
+        header: "",
+        text: `
+        
+        `,
+      },
+    ],
+    organization: [
+      {
+        id: 1,
+        header: "ORGANIZATIONS FOR THE NIGERIAN NAVY CENTRAL COMMAND",
+        text: `
+        The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
+\n\n
+        Operational Bases, Forward Operating Bases (FOBs), Air Stations and other establishments as determined by the Naval Headquarters or higher authorities. The Fleet Commander (FC) Central Naval Fleet is to exercise operational control on behalf of the FOC over ships allocated to the Fleet. By this NNO, the following existing bases and establishments shall become part of the CNC: INNS DELTA, INNS LUGARD, FOB ESCRAVOS, FOB FORMOSO, NNH Wan-i and Naval Flying Unit Warri.
+\n\n
+        [in addition, the following shall be established for the Command:
+\n
+        a. CNC Headquarters at Brass.
+\n
+        b. Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
+\n
+        c. Operational Base at Yenagoa or Brass.
+\n
+        d. Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
+\n
+        e. Squadron size Special Boat Service.
+\n
+        f. Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
+
+        `,
+      },
+      {
+        id: 2,
+        header: "OBJECTIVES OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
+        text: `
+                a. Development and review of doctrines for NN operations.
+                \n
+                b. Assessment of compliance with HSE standards in commands, ships and
+                establishments.
+                \n
+                c. Assessment of training curriculum including post course evaluation in NN professional schools.
+                \n
+                d. Development and implementation of methodologies for assessment of NN operations.
+                \n
+                e. Assessment of combat readiness of ships/units through work-up, Basic Operational Sea Training (BOST), Safety Operational Sea Training (SOST) and Consolidated Operational Sea Training (COST).
+                \n
+                f. Liaison with sister Services and friendly navies on development of joint and combined doctrines.
+                \n
+                g. Providing advice to NHQ on technology acquisition and local capacity building.
+                \n
+                h. Coordination/collaboration with other maritime stakeholders to develop and implement a National Maritime Doctrine.
+                \n
+                i. Publication of books, manuals and BRs relevant to NN operations.
+                \n
+                j. Maintenance of archive and library for preserving records and NN historical development.
+                \n
+                k. Exam, Higher Rate Professional Exam and any other exam as may be directed.
+                \n
+                l. Conduct research on doctrine concept and policy in naval engineering, logistics, administration, training and operations among others.
+                \n
+                m. Conduct research on applications for system development for operational efficiency.
+
+        `,
+      },
+      // {
+      //   id: 3,
+      //   header: "",
+      //   text: ``,
+      // },
+      {
+        id: 4,
+        header: "OBJECTIVES OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
+        text: `
+                a. Executing NN policies for acquisition and maintenance of capital assets.
+                \n
+                b. Establishing and monitoring repair and maintenance procedures, schedules, and standards including maintenance of ships, aircraft, and fixed assets, local and foreign refits of ships. 
+                \n
+                c. Ensuring the application of naval engineering standards to processes related to maintenance of ships and equipment in the NN. 
+                \n
+                d. Identification of local capabilities in support of maintenance tasks, capital projects, and materiel supply. 
+                \n
+                e. Conduct periodic inspections of all fleet maintenance assets and logistics infrastructure. 
+                \n
+                f. Undertake NN acquisitions as directed by the NHQ. 
+                \n
+                g. Procure, store, and distribute technical and naval stores material. Establish and monitor naval material supply procedures, schedules, and standards including periodicity of returns and quality management. 
+                \n
+                h. Monitor and assist operational commands in respect of first and second level maintenance and supply activities. 
+                \n
+                i. Provide storage and tests facilities for POL and all types of lubricants. Ensure the conduct of tests and compliance with safety regulations. 
+                \n
+                j. Accord operational requirements. 
+                \n
+                k. Preserve obsolete naval assets and equipment for later disposal action as may be directed. 
+                \n
+                l. Carry out such other duties and directives as may be given by the NLC.
+
+        `,
+      },
+      {
+        id: 5,
+        header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
+        text: `a. To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
+\n
+        b. To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.
+\n
+        c. To   establish   and   constantly   update   training   standard compatible with operational performance standards of the Navy.
+\n
+        d. To monitor training standards in the Navy by establishing an appropriate feedback system.
+\n
+        e. To   produce,   review   and   update   training   syllabi,   BRS, handouts and related materials for use in specified area of Naval Training and Training Establishment.
+\n
+        f. To develop and impart training on Instructional Technique to officers and men appointed as Instructors.
+\n
+        g. To develop and suitable training aids and equipment’s.
+\n
+        h. To establish and execute ships’ BOST, SOST and COST progammes as directed by NHQ from time to time.
+\n
+        i. To   formulate   fleet   operational   training   concepts   and tactical doctrines for approval by NHQ.
+\n      
+        j. To conduct cadet and sea training 
+\n      
+        k. To organize workshop, seminare, symposia and lectures on training concepts and tactical doctrines as directed by NHQ.
+\n      
+        l. To   establish   training   programs   and   routines   in schools/ships as appropriate 
+\n      
+        m. To administer two disciplines of Staff and Trainees in Training Schools/Training Establishments and training ships.
+\n      
+        n. To   coordinate   the   preparation   of   Training   Budgets   by Training Established and training ships.`,
+      },
+    ],
+    structure: [
+      {
+        id: 1,
+        header: "ORGANIZATIONS FOR THE NIGERIAN NAVY CENTRAL COMMAND",
+        text: `
+        The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
+\n\n
+        Operational Bases, Forward Operating Bases (FOBs), Air Stations and other establishments as determined by the Naval Headquarters or higher authorities. The Fleet Commander (FC) Central Naval Fleet is to exercise operational control on behalf of the FOC over ships allocated to the Fleet. By this NNO, the following existing bases and establishments shall become part of the CNC: INNS DELTA, INNS LUGARD, FOB ESCRAVOS, FOB FORMOSO, NNH Wan-i and Naval Flying Unit Warri.
+\n\n
+        [in addition, the following shall be established for the Command:
+\n
+        a. CNC Headquarters at Brass.
+\n
+        b. Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
+\n
+        c. Operational Base at Yenagoa or Brass.
+\n
+        d. Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
+\n
+        e. Squadron size Special Boat Service.
+\n
+        f. Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
+
+        `,
+      },
+      {
+        id: 2,
+        header: "STRUCTURES OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
+        text: `
+                
+                The NAVDOC shall be headed by a Flag Officer Commanding who shall be of the establishment rank of Rear Admiral and assisted by the Chief Staff Officer. In addition to the Director Simulation Centre who shall be of the establishment rank of Rear Admiral, other Principal Staff Officers in HQ NAVDOC with establishment ranks of Commodore are:
+        \n
+        a. Command Doctrine and Assessment Officer.
+        \n
+        b. Command Combat Readiness Officer.
+        \n
+        c. Command Manuals and Publications Officer.
+        \n
+        d. Command Administrative Officer.
+        \n
+        e. Command Transformation Officer.
+        \n
+        f. Command Health Safety and Environment Officer.
+        \n
+        g. Command Accounts and Budget Officer.
+        \n
+        h. Command Logistics Officer.
+        \n
+        i. Command Research and Development Officer.
+        \n
+        \n
+
+        NAVDOC shall maintain field monitoring and assessment cell in each NN Command HQs. The organizational chart of NAVDOC is at Annex A, while functions of the departments and schedule of duties of principal staff officers are at Annex B
+        `,
+      },
+      // {
+      //   id: 3,
+      //   header: "",
+      //   text: ``,
+      // },
+      {
+        id: 4,
+        header: "STRUCTURE OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
+        text: `
+        The NNLC will be headed by a Seaman/Engineer/Logistic officer who   is   responsible   to   the   CNS   and   will   be   assisted   by   the following principal staff officers: Chief Staff Officer (X, Engr, Log). 
+        \n\n
+        a. Command Administrative Officer (X). 
+        \n
+        b. Command Fleet Maintenance Officer (Engr). 
+        \n
+        c. Command Technical Officer (Engr). 
+        \n
+        d. Command Planning & Inspection Officer (Engr). 
+        \n
+        e. Command Project Officer (Engr/Log). 
+        \n
+        f. Command Materiel Officer (Engr/Log) 
+        \n
+        g. Command Accounts and Budget Officer (4&B). 
+        \n
+        h. Command Intelligence Officer [(X/Engr/Log (INT)]. 
+        \n
+        i. Command Medical Officer (Med). 
+        \n
+        j. Command Provost Marsha [X/Log (Provost)] 
+        \n\n
+        The organizational structure: of the NNLC is at Annex A while the functions of departments and the schedule of duty of each principal staff officer are spelt out in Annexes B and C respectively. 
+
+        `,
+      },
+      // {
+      //   id: 5,
+      //   header: " OF THE NIGERIAN NAVY TRAINING BASE",
+      //   text: ``,
+      // },
+    ],
+    administration: [
+      {
+        id: 1,
+        header: "ORGANIZATIONS FOR THE NIGERIAN NAVY CENTRAL COMMAND",
+        text: `
+        The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
+\n\n
+        Operational Bases, Forward Operating Bases (FOBs), Air Stations and other establishments as determined by the Naval Headquarters or higher authorities. The Fleet Commander (FC) Central Naval Fleet is to exercise operational control on behalf of the FOC over ships allocated to the Fleet. By this NNO, the following existing bases and establishments shall become part of the CNC: INNS DELTA, INNS LUGARD, FOB ESCRAVOS, FOB FORMOSO, NNH Wan-i and Naval Flying Unit Warri.
+\n\n
+        [in addition, the following shall be established for the Command:
+\n
+        a. CNC Headquarters at Brass.
+\n
+        b. Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
+\n
+        c. Operational Base at Yenagoa or Brass.
+\n
+        d. Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
+\n
+        e. Squadron size Special Boat Service.
+\n
+        f. Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
+
+        `,
+      },
+      {
+        id: 2,
+        header: "ADMINISTRATION OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
+        text: `
+                
+              
+The FOC NAVDOC shall be responsible to the Chief of the Naval Staff for the day-to-day running of the Command, exercising administrative and operational control of units under NAVDOC, and serving as the administrative authority for the Simulation Centre, as well as ships assigned to the Command for work-ups and assessments.        
+        
         `,
       },
       // {

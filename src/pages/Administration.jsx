@@ -8,10 +8,10 @@ import React from "react";
 import BackButton from "../components/BackButton";
 import { motion } from "framer-motion";
 
-const Structures = () => {
+const Administration = () => {
   const { id } = useParams();
 
-  const selectedItem = centralData[0]?.structure.find(
+  const selectedItem = centralData[0]?.administration.find(
     (item) => item.id === Number(id)
   );
 
@@ -125,4 +125,4 @@ const Structures = () => {
   );
 };
 
-export default Structures;
+export default Administration;

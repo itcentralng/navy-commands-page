@@ -64,7 +64,6 @@ const PastCommanding = () => {
               <div
                 className="splide_div"
                 style={{
-                  border: "1px solid red",
                   display: "flex",
                   flexDirection: "column",
                   width: "73vw",

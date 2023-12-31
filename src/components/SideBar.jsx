@@ -1,25 +1,19 @@
 /* eslint-disable react/prop-types */
 import { Box, Button, Typography } from "@mui/material";
-import about from "../assets/about.svg";
-import objectives from "../assets/objectives.svg";
-import departments from "../assets/departments.svg";
-import structures from "../assets/structures.svg";
-import gallery from "../assets/gallery.svg";
-import flag from "../assets/flag.svg";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { sidebarLinks } from "../../data";
 const SideBar = ({ children }) => {
   const location = useLocation();
   const { id } = useParams();
 
-  const selectedItem = sidebarLinks[0]?.linkId.find((item) => item.id === Number(id));
+  // Find the corresponding sidebar links for the current page id
+  const sidebarLinksForPage = sidebarLinks[0]?.linkId.find(
+    (item) => item.id === Number(id)
+  );
 
-  if (!selectedItem) {
+  if (!sidebarLinksForPage) {
     return (
       <Box>
-        {/* <DetailsHeader>
-          <SideBar />
-        </DetailsHeader> */}
         <h1>No details found</h1>
       </Box>
     );
@@ -37,15 +31,15 @@ const SideBar = ({ children }) => {
       }}
     >
       <Box sx={{ width: "15%" }}>
-        {buttonItem.map((item) => (
+        {sidebarLinksForPage.link.map((pageLink, index) => (
           <Link
-            to={`/${item.pageLink}/${selectedItem.id}`}
+            to={`/${pageLink}/${id}`}
             style={{
               textDecoration: "none",
               width: "100%",
               height: "100%",
             }}
-            key={item.id}
+            key={pageLink}
           >
             <Button
               disableRipple
@@ -59,14 +53,23 @@ const SideBar = ({ children }) => {
                 padding: "2em 0",
                 borderRadius: "20px",
                 marginBottom: "2em",
-                backgroundColor: location.pathname === `/${item.pageLink}/${selectedItem.id}` ? "#D1C62A" : "transparent",
+                backgroundColor:
+                  location.pathname === `/${pageLink}/${id}`
+                    ? "#D1C62A"
+                    : "transparent",
                 "&:hover": {
                   borderColor: "#D1C62A",
                   backgroundColor: "#D1C62A",
                 },
               }}
             >
-              <img src={item.image} alt="" style={{ width: "3.2rem" }} />
+              <img
+                key={index} // Assuming index is the correct key for images
+                src={sidebarLinksForPage.image[index]}
+                alt=""
+                style={{ width: "3.2rem" }}
+              />
+
               <Typography
                 variant="body2"
                 sx={{
@@ -75,7 +78,7 @@ const SideBar = ({ children }) => {
                   fontSize: "1.25rem",
                 }}
               >
-                {item.text}
+                {pageLink}
               </Typography>
             </Button>
           </Link>
@@ -87,43 +90,43 @@ const SideBar = ({ children }) => {
   );
 };
 
-const buttonItem = [
-  {
-    id: 1,
-    image: about,
-    text: "About",
-    pageLink: "about",
-  },
-  {
-    id: 2,
-    image: objectives,
-    text: "Objectives",
-    pageLink: "objectives",
-  },
-  {
-    id: 3,
-    image: departments,
-    text: "Departments",
-    pageLink: "departments",
-  },
-  {
-    id: 4,
-    image: structures,
-    text: "Structures",
-    pageLink: "structures",
-  },
-  {
-    id: 5,
-    image: flag,
-    text: "Flag Officer",
-    pageLink: "flag",
-  },
-  {
-    id: 6,
-    image: gallery,
-    text: "Gallery",
-    pageLink: "gallery",
-  },
-];
+// const buttonItem = [
+//   {
+//     id: 1,
+//     image: about,
+//     text: "About",
+//     pageLink: "about",
+//   },
+//   {
+//     id: 2,
+//     image: objectives,
+//     text: "Objectives",
+//     pageLink: "objectives",
+//   },
+//   {
+//     id: 3,
+//     image: departments,
+//     text: "Departments",
+//     pageLink: "departments",
+//   },
+//   {
+//     id: 4,
+//     image: structures,
+//     text: "Structures",
+//     pageLink: "structures",
+//   },
+//   {
+//     id: 5,
+//     image: flag,
+//     text: "Flag Officer",
+//     pageLink: "flag",
+//   },
+//   {
+//     id: 6,
+//     image: gallery,
+//     text: "Gallery",
+//     pageLink: "gallery",
+//   },
+// ];
 
 export default SideBar;
