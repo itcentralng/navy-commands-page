@@ -15,6 +15,7 @@ const HeroPage = () => {
           alignItems: "center",
           flexDirection: "column",
           height: "100vh",
+          position: "relative",
         }}
       >
         <Box
@@ -25,6 +26,8 @@ const HeroPage = () => {
             justifyContent: "space-around",
             alignItems: "center",
             flexDirection: "column",
+            position: "relative",
+            zIndex: 2,
           }}
         >
           <motion.div
@@ -65,9 +68,7 @@ const HeroPage = () => {
                   fontFamily: "ManropeSemiBold",
                 }}
               >
-                “From successful maritime operations to humanitarian missions,
-                our naval forces continue to uphold the highest standards of
-                professionalism and excellence."
+                “From successful maritime operations to humanitarian missions, our naval forces continue to uphold the highest standards of professionalism and excellence."
               </Typography>
             </Box>
 

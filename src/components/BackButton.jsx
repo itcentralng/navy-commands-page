@@ -18,6 +18,7 @@ const BackButton = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        zIndex: 2,
       }}
     >
       <Box sx={{ textAlign: "center", fontSize: "1.25rem" }}>BACK TO HOME</Box>

@@ -12,9 +12,7 @@ const SideBar = ({ children }) => {
   const location = useLocation();
   const { id } = useParams();
 
-  const selectedItem = sidebarLinks[0]?.linkId.find(
-    (item) => item.id === Number(id)
-  );
+  const selectedItem = sidebarLinks[0]?.linkId.find((item) => item.id === Number(id));
 
   if (!selectedItem) {
     return (
@@ -34,6 +32,8 @@ const SideBar = ({ children }) => {
         justifyContent: "start",
         marginLeft: "1em",
         position: "relative",
+        zIndex: 2,
+        paddingTop: "2em",
       }}
     >
       <Box sx={{ width: "15%" }}>
@@ -59,10 +59,7 @@ const SideBar = ({ children }) => {
                 padding: "2em 0",
                 borderRadius: "20px",
                 marginBottom: "2em",
-                backgroundColor:
-                  location.pathname === `/${item.pageLink}/${selectedItem.id}`
-                    ? "#D1C62A"
-                    : "transparent",
+                backgroundColor: location.pathname === `/${item.pageLink}/${selectedItem.id}` ? "#D1C62A" : "transparent",
                 "&:hover": {
                   borderColor: "#D1C62A",
                   backgroundColor: "#D1C62A",

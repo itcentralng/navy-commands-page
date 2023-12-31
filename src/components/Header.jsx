@@ -11,6 +11,9 @@ const Header = ({ children }) => {
           display: "flex",
           justifyContent: "center",
           width: "100%",
+          position: "relative",
+          zIndex: 2,
+          paddingTop: "2em",
         }}
       >
         <Box

@@ -10,9 +10,7 @@ import { motion } from "framer-motion";
 const FlagsPage = () => {
   const { id } = useParams();
 
-  const selectedItem = centralData[0]?.flagsPage.find(
-    (item) => item.id === Number(id)
-  );
+  const selectedItem = centralData[0]?.flagsPage.find((item) => item.id === Number(id));
 
   if (!selectedItem) {
     // Handle the case where the item is not found
@@ -26,12 +24,7 @@ const FlagsPage = () => {
       >
         <SideBar></SideBar>
         <DetailsHeader></DetailsHeader>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1, ease: "easeIn" }}
-        >
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1, ease: "easeIn" }}>
           <BackButton />
         </motion.div>
       </Box>
@@ -71,8 +64,8 @@ const FlagsPage = () => {
                 <Box
                   sx={{
                     backgroundColor: "#FFFFFF80",
-                    height: "20em",
-                    width: "25em",
+                    height: "30em",
+                    width: "40em",
                     borderRadius: "20px",
                   }}
                 >
@@ -107,7 +100,7 @@ const FlagsPage = () => {
                           marginTop: "2em",
                         }}
                       >
-                        Current Commanding Officer
+                        Current Flag Officer Commanding
                       </Typography>
                     </Box>
                   </Link>
@@ -115,8 +108,8 @@ const FlagsPage = () => {
                 <Box
                   sx={{
                     backgroundColor: "#FFFFFF80",
-                    height: "20em",
-                    width: "25em",
+                    height: "30em",
+                    width: "40em",
                     borderRadius: "20px",
                   }}
                 >
@@ -152,7 +145,7 @@ const FlagsPage = () => {
                           marginTop: "2em",
                         }}
                       >
-                        Realm of Excellence of Officers
+                        Past Flag Officers Commanding
                       </Typography>
                     </Box>
                   </Link>
