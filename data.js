@@ -75,7 +75,7 @@ export const centralData = [
       },
       {
         id: 5,
-        header: "The Nigerian Navy Training Base",
+        header: "The Nigerian Navy Training Command",
         text: `The Naval Training Command (NAVTRAC) is hereby established for the centralized control, execution and superintendence of Local Training in the Nigerian Navy, and for the purpose of coordinating and harmonizing the training doctrine, concepts and standards of local Training in Nigeria, including Basic Sea Training for ratings, cadets, officers, the commander will also be responsible for the basic Operational Sea Training (BOST), safety Operational Sea Training (SOST) and Consolidation Operational Sea Training (COST) of the Fleet.`,
         image: training,
       },
@@ -168,7 +168,7 @@ export const centralData = [
       },
       {
         id: 5,
-        header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
+        header: "OBJECTIVES OF THE NIGERIAN NAVY Training Command",
         text: `a. To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
 \n
         b. To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.
@@ -271,62 +271,27 @@ export const centralData = [
       {
         id: 1,
         alt: "1",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 2,
         alt: "2",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 3,
         alt: "3",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 4,
         alt: "4",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 5,
         alt: "5",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
     ],
   },
