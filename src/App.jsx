@@ -13,6 +13,7 @@ import Department from "./pages/Department";
 import AOR from "./pages/AOR";
 import Organization from "./pages/Organization";
 import Administration from "./pages/Administration";
+import Finance from "./pages/Finance";
 
 const App = () => {
   const location = useLocation();
@@ -63,6 +64,7 @@ const App = () => {
           <Route path="/structures/:id" element={<Structures />} />
           <Route path="/organizations/:id" element={<Organization />} />
           <Route path="/administration/:id" element={<Administration />} />
+          <Route path="/finance/:id" element={<Finance />} />
           <Route path="/gallery/:id" element={<Gallery />} />
           <Route path="/flag/:id" element={<FlagsPage />} />
           <Route path={`/past-commanding/:id`} element={<PastCommanding />} />
