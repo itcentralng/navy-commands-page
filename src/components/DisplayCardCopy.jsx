@@ -117,11 +117,7 @@ const DisplayCard = () => {
                   height: "100%",
                 }}
               >
-                <img
-                  src={item.back}
-                  alt=""
-                  style={{ width: "40%", marginBottom: "2.5em" }}
-                />
+                <img src={item.back} alt="" style={{ width: "40%", marginBottom: "2.5em" }} />
               </div>
             </Link>
           </motion.div>
@@ -160,7 +156,7 @@ const data = [
     id: 5,
     front: training,
     back: training,
-    lowerText: "Nigerian Navy Training Base",
+    lowerText: "Nigerian Navy Training Command",
   },
 ];
 

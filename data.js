@@ -10,84 +10,16 @@ import blankSquare6 from "./src/assets/blank-rectangle.svg";
 import nigNavy1 from "./src/assets/nignavy.svg";
 import nigNavy2 from "./src/assets/nignavy.svg";
 import logistic from "./src/assets/logistic.svg";
-import about from "./src/assets/about.svg";
-import objectives from "./src/assets/objectives.svg";
-import departments from "./src/assets/departments.svg";
-import structures from "./src/assets/structures.svg";
-import gallery from "./src/assets/gallery.svg";
-import flag from "./src/assets/flag.svg";
 
 export const sidebarLinks = [
   {
-    // linkId: [
-    //   { id: 1, link: ["about", "abou", "abo", "ab", "a"] },
-    //   { id: 2, link: "objectives" },
-    //   { id: 3, link: "departments" },
-    //   { id: 4, link: "structures" },
-    //   { id: 5, link: "flag" },
-    //   { id: 6, link: "gallery" },
-    // ],
     linkId: [
-      {
-        id: 1,
-        link: [
-          "about",
-          "objectives",
-          "AOR",
-          "organizations",
-          "flag",
-          "gallery",
-        ],
-        image: [about, objectives, departments, structures, flag, gallery],
-      },
-      {
-        id: 2,
-        link: [
-          "about",
-          "objectives",
-          "structures",
-          "administration",
-          "flag",
-          "gallery",
-        ],
-        image: [about, objectives, departments, structures, flag, gallery],
-      },
-      {
-        id: 3,
-        link: [
-          "about",
-          "objectives",
-          "structures",
-          "departments",
-          "flag",
-          "gallery",
-        ],
-        image: [about, objectives, departments, structures, flag, gallery],
-      },
-      {
-        id: 4,
-        link: [
-          "about",
-          "objectives",
-          "structures",
-          "finance",
-          "flag",
-          "gallery",
-        ],
-        image: [about, objectives, departments, structures, flag, gallery],
-      },
-      {
-        id: 5,
-        link: [
-          "about",
-          "objectives",
-          "structures",
-          "departments",
-          "flag",
-          "gallery",
-        ],
-        image: [about, objectives, departments, structures, flag, gallery],
-      },
+      { id: 1, link: "about" },
+      { id: 2, link: "objectives" },
+      { id: 3, link: "departments" },
+      { id: 4, link: "structures" },
+      { id: 5, link: "flag" },
+      { id: 6, link: "gallery" },
     ],
   },
 ];
@@ -107,7 +39,7 @@ export const centralData = [
       },
       {
         id: 2,
-        header: "The Nigerian Navy Doctrine Command",
+        header: "The Nigerian Naval Doctrine Command",
         text: `
                
                 Naval doctrine provides the foundation upon which navies are organized, trained, equipped, and deployed. It also sets the basis for assessment and improvement of standards for personnel and equipment, hence the need for emplacement of doctrines for regular assessment of activities and procedures in the Nigerian Navy (NN). To achieve this, efforts were made in the past including the establishment of Naval Training Command, Directorate of Inspection Doctrine and Research, Sea Training Command, and Naval Doctrine and Assessment Centre (NDAC).
@@ -144,7 +76,7 @@ export const centralData = [
       {
         id: 5,
         header: "The Nigerian Navy Training Command",
-        text: `The Naval Training Command (NAVTRAC) is established for the centralized control, execution and superintendence of Local Training in the Nigerian Navy, and for the purpose of coordinating and harmonizing the training doctrine, concepts and standards of local Training in Nigeria, including Basic Sea Training for ratings, cadets, officers, the commander will also be responsible for the basic Operational Sea Training (BOST), safety Operational Sea Training (SOST) and Consolidation Operational Sea Training (COST) of the Fleet.`,
+        text: `The Naval Training Command (NAVTRAC) is hereby established for the centralized control, execution and superintendence of Local Training in the Nigerian Navy, and for the purpose of coordinating and harmonizing the training doctrine, concepts and standards of local Training in Nigeria, including Basic Sea Training for ratings, cadets, officers, the commander will also be responsible for the basic Operational Sea Training (BOST), safety Operational Sea Training (SOST) and Consolidation Operational Sea Training (COST) of the Fleet.`,
         image: training,
       },
     ],
@@ -532,81 +464,6 @@ export const centralData = [
       //   text: ``,
       // },
     ],
-    finance: [
-      //       {
-      //         id: 1,
-      //         header: "ORGANIZATIONS FOR THE NIGERIAN NAVY CENTRAL COMMAND",
-      //         text: `
-      //           The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
-      //   \n\n
-      //           Operational Bases, Forward Operating Bases (FOBs), Air Stations and other establishments as determined by the Naval Headquarters or higher authorities. The Fleet Commander (FC) Central Naval Fleet is to exercise operational control on behalf of the FOC over ships allocated to the Fleet. By this NNO, the following existing bases and establishments shall become part of the CNC: INNS DELTA, INNS LUGARD, FOB ESCRAVOS, FOB FORMOSO, NNH Wan-i and Naval Flying Unit Warri.
-      //   \n\n
-      //           [in addition, the following shall be established for the Command:
-      //   \n
-      //           a. CNC Headquarters at Brass.
-      //   \n
-      //           b. Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
-      //   \n
-      //           c. Operational Base at Yenagoa or Brass.
-      //   \n
-      //           d. Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
-      //   \n
-      //           e. Squadron size Special Boat Service.
-      //   \n
-      //           f. Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
-
-      //           `,
-      //       },
-      //       {
-      //         id: 2,
-      //         header: "STRUCTURES OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
-      //         text: `
-
-      //                   The NAVDOC shall be headed by a Flag Officer Commanding who shall be of the establishment rank of Rear Admiral and assisted by the Chief Staff Officer. In addition to the Director Simulation Centre who shall be of the establishment rank of Rear Admiral, other Principal Staff Officers in HQ NAVDOC with establishment ranks of Commodore are:
-      //           \n
-      //           a. Command Doctrine and Assessment Officer.
-      //           \n
-      //           b. Command Combat Readiness Officer.
-      //           \n
-      //           c. Command Manuals and Publications Officer.
-      //           \n
-      //           d. Command Administrative Officer.
-      //           \n
-      //           e. Command Transformation Officer.
-      //           \n
-      //           f. Command Health Safety and Environment Officer.
-      //           \n
-      //           g. Command Accounts and Budget Officer.
-      //           \n
-      //           h. Command Logistics Officer.
-      //           \n
-      //           i. Command Research and Development Officer.
-      //           \n
-      //           \n
-
-      //           NAVDOC shall maintain field monitoring and assessment cell in each NN Command HQs. The organizational chart of NAVDOC is at Annex A, while functions of the departments and schedule of duties of principal staff officers are at Annex B
-      //           `,
-      //       },
-      // {
-      //   id: 3,
-      //   header: "",
-      //   text: ``,
-      // },
-      {
-        id: 4,
-        header: "FINANCE OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
-        text: `
-
-        The NNLC will be, funded by the NI-IQ to enable it perform its responsibilities. For transparency. and accountability, the funds allocated to the NNLC are to be managed in accordance with existing government financial regulations. The NNLC will have its own Tenders Board which will operate at the same level with the Command Tenders Board. The NNLC will be represented at the NN Tenders Board. 
-
-          `,
-      },
-      // {
-      //   id: 5,
-      //   header: " OF THE NIGERIAN NAVY TRAINING BASE",
-      //   text: ``,
-      // },
-    ],
     administration: [
       {
         id: 1,
@@ -782,62 +639,27 @@ The FOC NAVDOC shall be responsible to the Chief of the Naval Staff for the day-
       {
         id: 1,
         alt: "1",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 2,
         alt: "2",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 3,
         alt: "3",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 4,
         alt: "4",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
       {
         id: 5,
         alt: "5",
-        image1: [
-          blankSquare1,
-          blankSquare2,
-          blankSquare3,
-          blankSquare4,
-          blankSquare5,
-          blankSquare6,
-        ],
+        image1: [blankSquare1, blankSquare2, blankSquare3, blankSquare4, blankSquare5, blankSquare6],
       },
     ],
   },

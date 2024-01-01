@@ -92,7 +92,7 @@ const data = [
   {
     id: 5,
     front: training,
-    lowerText: "Nigerian Navy Training Base",
+    lowerText: "Nigerian Navy Training Command",
     height: "9.1875rem",
     width: "6.8125rem",
   },
