@@ -122,7 +122,7 @@ export const centralData = [
     about: [
       {
         id: 1,
-        header: "The Nigerian Central Naval Command",
+        header: "Central Naval Command",
         text: `
         Since inception in 1956, the statutory roles of the NN have expanded to cover the full spectrum of military, policing, and diplomatic functions. So also, were the imperatives of operational capacity that demand effective presence and domain awareness within the internal waters, territorial seas, and the Exclusive Economic Zone (EEZ). As part of the structural response to these challenges, the NN had over the past decades operated a two-command structure for the coordination of its operational level activities, namely; Western Naval Command (WNC) and Eastern Naval Command (ENC). while noting that both operational commands have equitably discharged their responsibilities, recent events and indeed the trend of threats within the nation's marital domain have justified the necessity for a review of the current structure. Specifically, the emergence of various forms of illegal trafficking, militancy, sabotage, piracy, and attacks on shipping have placed considerable demand on NN policing capacity, particularly in the Niger Delta. Inevitably, apart from improved coastal presence with ships and bases, there are emergent requirements for more robust capability on riverine and special operations, including the protection of Key Points and Valuable Points.
  \n       
@@ -132,7 +132,7 @@ export const centralData = [
       },
       {
         id: 2,
-        header: "The Nigerian Navy Doctrine Command",
+        header: "Naval Doctrine Command",
         text: `
                
                 Naval doctrine provides the foundation upon which navies are organized, trained, equipped, and deployed. It also sets the basis for assessment and improvement of standards for personnel and equipment, hence the need for emplacement of doctrines for regular assessment of activities and procedures in the Nigerian Navy (NN). To achieve this, efforts were made in the past including the establishment of Naval Training Command, Directorate of Inspection Doctrine and Research, Sea Training Command, and Naval Doctrine and Assessment Centre (NDAC).
@@ -143,7 +143,7 @@ export const centralData = [
       },
       {
         id: 3,
-        header: "The Nigerian Naval Ship Quorra",
+        header: "Naval Ship Quorra",
         text: `
         Nigeria Navy training institutions are gradually aggregated into a training command, overseeing overall training policy, doctrine, and control, excluding the Nigerian Naval College, ONURA. 
        \n
@@ -157,7 +157,7 @@ export const centralData = [
       },
       {
         id: 4,
-        header: "The Nigerian Naval Logistics Command",
+        header: "Logistics Command",
         text: `
                
                 Over the years, the Nigerian Navy (NN) has separated fleet support services from logistic support services to improve its operational efficiency. As a result, the administrative control of logistics is split between the Maintenance Corps (FMC) and the Logistic Corps. However, challenges in this arrangement have adversely affected the ability to provide adequate logistics support for naval operations. Other limitations of the current logistic system in the NN include a lack of a career profession for a body of well-trained logistics officers and a separation between maintenance and supply of spare parts.
@@ -168,19 +168,19 @@ export const centralData = [
       },
       {
         id: 5,
-        header: "The Nigerian Navy Training Command",
+        header: "Navy Training Command",
         text: `The Naval Training Command (NAVTRAC) is established for the centralized control, execution and superintendence of Local Training in the Nigerian Navy, and for the purpose of coordinating and harmonizing the training doctrine, concepts and standards of local Training in Nigeria, including Basic Sea Training for ratings, cadets, officers, the commander will also be responsible for the basic Operational Sea Training (BOST), safety Operational Sea Training (SOST) and Consolidation Operational Sea Training (COST) of the Fleet.`,
         image: training,
       },
       {
         id: 6,
-        header: "The Nigerian Eastern Naval Command",
+        header: "Eastern Naval Command",
         text: ``,
         image: eastern,
       },
       {
         id: 7,
-        header: "The Nigerian Western Naval Command",
+        header: "Western Naval Command",
         text: ``,
         image: western,
       },
@@ -188,7 +188,7 @@ export const centralData = [
     objective: [
       {
         id: 1,
-        header: "OBJECTIVES OF THE NIGERIAN CENTRAL NAVAL COMMAND",
+        header: "OBJECTIVES OF THE CENTRAL NAVAL COMMAND",
         text: `- Traditional naval duties at sea.
 \n      
         - Employment   and   deployment   of   vessels,   personnel   and   material to effectively   police   and   protect   the   numerous   rigs,   platforms,   oil installations, creeks and adjoining rivers in its AOR.
@@ -205,7 +205,7 @@ export const centralData = [
       },
       {
         id: 2,
-        header: "OBJECTIVES OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
+        header: "OBJECTIVES OF THE NAVAL DOCTRINE COMMAND",
         text: `
                 - Development and review of doctrines for NN operations.
                 \n
@@ -243,7 +243,7 @@ export const centralData = [
       // },
       {
         id: 4,
-        header: "OBJECTIVES OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
+        header: "OBJECTIVES OF THE LOGISTICS COMMAND ",
         text: `
                 - Executing NN policies for acquisition and maintenance of capital assets.
                 \n
@@ -273,7 +273,7 @@ export const centralData = [
       },
       {
         id: 5,
-        header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
+        header: "OBJECTIVES OF THE NAVAL TRAINING COMMAND",
         text: `- To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
 \n
         - To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.
@@ -304,19 +304,19 @@ export const centralData = [
       },
       {
         id: 6,
-        header: "OBJECTIVES OF THE NIGERIAN EASTERN NAVAL COMMAND",
+        header: "OBJECTIVES OF THE EASTERN NAVAL COMMAND",
         text: ``,
       },
       {
         id: 7,
-        header: "OBJECTIVES OF THE NIGERIAN WESTERN NAVAL COMMAND",
+        header: "OBJECTIVES OF THE WESTERN NAVAL COMMAND",
         text: ``,
       },
     ],
     aor: [
       {
         id: 1,
-        header: "AREA OF RESPONSIBILITY FOR THE NIGERIAN CENTRAL NAVAL COMMAND",
+        header: "AREA OF RESPONSIBILITY FOR THE CENTRAL NAVAL COMMAND",
         text: `
                 The coastal limits of the AOR is measured from the baseline stretching from the area before River Benin entrance at Longitude 005 00' E to River Santa Barbara entrance at Longitude 0060 30'E, covering a coastal distance of about 156nm. Seaward from the baseline, the AOR of the Command shall encompass the tentorial seas up to the limit of the Exclusive Economic Zone (EEZ) as defined along the limiting longitudes. The coastal states to be covered are Bayelsa and Delta. The landward AOR would include Edo, Kogi and Anambra States.
 \n\n
@@ -375,7 +375,7 @@ export const centralData = [
     organization: [
       {
         id: 1,
-        header: "ORGANIZATIONS FOR THE NIGERIAN CENTRAL NAVAL COMMAND",
+        header: "ORGANIZATIONS FOR THE CENTRAL NAVAL COMMAND",
         text: `
         The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
 \n\n
@@ -399,7 +399,7 @@ export const centralData = [
       },
       {
         id: 2,
-        header: "OBJECTIVES OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
+        header: "OBJECTIVES OF THE NAVAL DOCTRINE COMMAND",
         text: `
                 - Development and review of doctrines for NN operations.
                 \n
@@ -437,7 +437,7 @@ export const centralData = [
       },
       {
         id: 4,
-        header: "OBJECTIVES OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
+        header: "OBJECTIVES OF THE LOGISTICS COMMAND ",
         text: `
                 a. Executing NN policies for acquisition and maintenance of capital assets.
                 \n
@@ -467,7 +467,7 @@ export const centralData = [
       },
       {
         id: 5,
-        header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
+        header: "OBJECTIVES OF THE NAVAL TRAINING COMMAND",
         text: `a. To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
 \n
         b. To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.
@@ -510,7 +510,7 @@ export const centralData = [
     structure: [
       {
         id: 1,
-        header: "ORGANIZATIONS FOR THE NIGERIAN CENTRAL NAVAL COMMAND",
+        header: "ORGANIZATIONS FOR THE CENTRAL NAVAL COMMAND",
         text: `
         The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
 \n\n
@@ -534,7 +534,7 @@ export const centralData = [
       },
       {
         id: 2,
-        header: "STRUCTURES OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
+        header: "STRUCTURES OF THE NAVAL DOCTRINE COMMAND",
         text: `
                 
                 The NAVDOC shall be headed by a Flag Officer Commanding who shall be of the establishment rank of Rear Admiral and assisted by the Chief Staff Officer. In addition to the Director Simulation Centre who shall be of the establishment rank of Rear Admiral, other Principal Staff Officers in HQ NAVDOC with establishment ranks of Commodore are:
@@ -569,7 +569,7 @@ export const centralData = [
       // },
       {
         id: 4,
-        header: "STRUCTURE OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
+        header: "STRUCTURE OF THE LOGISTICS COMMAND ",
         text: `
         The NNLC will be headed by a Seaman/Engineer/Logistic officer who   is   responsible   to   the   CNS   and   will   be   assisted   by   the following principal staff officers: Chief Staff Officer (X, Engr, Log). 
         \n\n
@@ -599,17 +599,17 @@ export const centralData = [
       },
       {
         id: 5,
-        header: "STRUCTURE OF THE NIGERIAN NAVY TRAINING BASE",
+        header: "STRUCTURE OF THE NAVAL TRAINING COMMAND",
         text: ``,
       },
       {
         id: 6,
-        header: "STRUCTURE OF THE NIGERIAN EASTERN NAVAL COMMAND",
+        header: "STRUCTURE OF THE EASTERN NAVAL COMMAND",
         text: ``,
       },
       {
         id: 7,
-        header: "STRUCTURE OF THE NIGERIAN WESTERN NAVAL COMMAND",
+        header: "STRUCTURE OF THE WESTERN NAVAL COMMAND",
         text: ``,
       },
     ],
@@ -635,7 +635,7 @@ export const centralData = [
       },
       {
         id: 4,
-        header: "FINANCE OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
+        header: "FINANCE OF THE LOGISTICS COMMAND ",
         text: `
 
         The NNLC will be, funded by the NI-IQ to enable it perform its responsibilities. For transparency. and accountability, the funds allocated to the NNLC are to be managed in accordance with existing government financial regulations. The NNLC will have its own Tenders Board which will operate at the same level with the Command Tenders Board. The NNLC will be represented at the NN Tenders Board. 
@@ -661,7 +661,7 @@ export const centralData = [
     administration: [
       {
         id: 1,
-        header: "ORGANIZATIONS FOR THE NIGERIAN CENTRAL NAVAL COMMAND",
+        header: "ORGANIZATIONS FOR THE CENTRAL NAVAL COMMAND",
         text: `
         The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
 \n\n
@@ -685,7 +685,7 @@ export const centralData = [
       },
       {
         id: 2,
-        header: "ADMINISTRATION OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
+        header: "ADMINISTRATION OF THE NAVAL DOCTRINE COMMAND",
         text: `
                 
               
@@ -700,7 +700,7 @@ The FOC NAVDOC shall be responsible to the Chief of the Naval Staff for the day-
       },
       {
         id: 4,
-        header: "OBJECTIVES OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
+        header: "OBJECTIVES OF THE LOGISTICS COMMAND ",
         text: `
                 - Executing NN policies for acquisition and maintenance of capital assets.
                 \n
@@ -730,7 +730,7 @@ The FOC NAVDOC shall be responsible to the Chief of the Naval Staff for the day-
       },
       {
         id: 5,
-        header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
+        header: "OBJECTIVES OF THE NAVAL TRAINING COMMAND",
         text: `- To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
 \n
         - To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.

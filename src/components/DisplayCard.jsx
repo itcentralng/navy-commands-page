@@ -74,7 +74,7 @@ const data = [
   {
     id: 2,
     front: nignavy,
-    lowerText: "Navy Doctrine Command",
+    lowerText: "Naval Doctrine Command",
     height: "9.2105rem",
     width: "6.25rem",
   },
@@ -88,14 +88,14 @@ const data = [
   {
     id: 4,
     front: logistic,
-    lowerText: "Naval Logistics Command",
+    lowerText: "Logistics Command",
     height: "9.1875rem",
     width: "6.25rem",
   },
   {
     id: 5,
     front: training,
-    lowerText: "Navy Training Command",
+    lowerText: "Naval Training Command",
     height: "9.1875rem",
     width: "6.8125rem",
   },
