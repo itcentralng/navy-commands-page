@@ -72,7 +72,7 @@ const AboutPage = () => {
                 sx={{
                   color: "#fff",
                   fontSize: "4.375rem",
-                  width: "800px",
+                  width: "850px",
                   textTransform: "uppercase",
                   fontFamily: "Perpetua Light",
                 }}

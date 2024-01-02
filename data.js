@@ -122,7 +122,7 @@ export const centralData = [
     about: [
       {
         id: 1,
-        header: "The Nigerian Navy Central Command",
+        header: "The Nigerian Central Naval Command",
         text: `
         Since inception in 1956, the statutory roles of the NN have expanded to cover the full spectrum of military, policing, and diplomatic functions. So also, were the imperatives of operational capacity that demand effective presence and domain awareness within the internal waters, territorial seas, and the Exclusive Economic Zone (EEZ). As part of the structural response to these challenges, the NN had over the past decades operated a two-command structure for the coordination of its operational level activities, namely; Western Naval Command (WNC) and Eastern Naval Command (ENC). while noting that both operational commands have equitably discharged their responsibilities, recent events and indeed the trend of threats within the nation's marital domain have justified the necessity for a review of the current structure. Specifically, the emergence of various forms of illegal trafficking, militancy, sabotage, piracy, and attacks on shipping have placed considerable demand on NN policing capacity, particularly in the Niger Delta. Inevitably, apart from improved coastal presence with ships and bases, there are emergent requirements for more robust capability on riverine and special operations, including the protection of Key Points and Valuable Points.
  \n       
@@ -174,13 +174,13 @@ export const centralData = [
       },
       {
         id: 6,
-        header: "Eastern Naval Command",
+        header: "The Nigerian Eastern Naval Command",
         text: ``,
         image: eastern,
       },
       {
         id: 7,
-        header: "Western Naval Command",
+        header: "The Nigerian Western Naval Command",
         text: ``,
         image: western,
       },
@@ -188,7 +188,7 @@ export const centralData = [
     objective: [
       {
         id: 1,
-        header: "OBJECTIVES OF THE NIGERIAN NAVY CENTRAL COMMAND",
+        header: "OBJECTIVES OF THE NIGERIAN CENTRAL NAVAL COMMAND",
         text: `- Traditional naval duties at sea.
 \n      
         - Employment   and   deployment   of   vessels,   personnel   and   material to effectively   police   and   protect   the   numerous   rigs,   platforms,   oil installations, creeks and adjoining rivers in its AOR.
@@ -316,7 +316,7 @@ export const centralData = [
     aor: [
       {
         id: 1,
-        header: "AREA OF RESPONSIBILITY FOR THE NIGERIAN NAVY CENTRAL COMMAND",
+        header: "AREA OF RESPONSIBILITY FOR THE NIGERIAN CENTRAL NAVAL COMMAND",
         text: `
                 The coastal limits of the AOR is measured from the baseline stretching from the area before River Benin entrance at Longitude 005 00' E to River Santa Barbara entrance at Longitude 0060 30'E, covering a coastal distance of about 156nm. Seaward from the baseline, the AOR of the Command shall encompass the tentorial seas up to the limit of the Exclusive Economic Zone (EEZ) as defined along the limiting longitudes. The coastal states to be covered are Bayelsa and Delta. The landward AOR would include Edo, Kogi and Anambra States.
 \n\n
@@ -375,7 +375,7 @@ export const centralData = [
     organization: [
       {
         id: 1,
-        header: "ORGANIZATIONS FOR THE NIGERIAN NAVY CENTRAL COMMAND",
+        header: "ORGANIZATIONS FOR THE NIGERIAN CENTRAL NAVAL COMMAND",
         text: `
         The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
 \n\n
@@ -510,7 +510,7 @@ export const centralData = [
     structure: [
       {
         id: 1,
-        header: "ORGANIZATIONS FOR THE NIGERIAN NAVY CENTRAL COMMAND",
+        header: "ORGANIZATIONS FOR THE NIGERIAN CENTRAL NAVAL COMMAND",
         text: `
         The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
 \n\n
@@ -661,7 +661,7 @@ export const centralData = [
     administration: [
       {
         id: 1,
-        header: "ORGANIZATIONS FOR THE NIGERIAN NAVY CENTRAL COMMAND",
+        header: "ORGANIZATIONS FOR THE NIGERIAN CENTRAL NAVAL COMMAND",
         text: `
         The CNC shall be organised along the pattern of existing operational commands with Headquarters, Fleet, Bases ankle necessary logistics support to cater for its operations. The Command shall be headed by Flag Officer Commanding (FOC) who shall be a seaman officer of the rank of a Rear Admiral or above. The organisational structure of the Command is at Annex B. The CNC shall have dedicated Fleet to be known as Central Naval Fleet,
 \n\n
