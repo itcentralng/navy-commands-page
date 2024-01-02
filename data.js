@@ -117,50 +117,50 @@ export const centralData = [
       {
         id: 1,
         header: "OBJECTIVES OF THE NIGERIAN NAVY CENTRAL COMMAND",
-        text: `a. Traditional naval duties at sea.
+        text: `- Traditional naval duties at sea.
 \n      
-        b. Employment   and   deployment   of   vessels,   personnel   and   material to effectively   police   and   protect   the   numerous   rigs,   platforms,   oil installations, creeks and adjoining rivers in its AOR.
+        - Employment   and   deployment   of   vessels,   personnel   and   material to effectively   police   and   protect   the   numerous   rigs,   platforms,   oil installations, creeks and adjoining rivers in its AOR.
 \n     
-        c. Integrate and employ ground, maritime, air and special operations forces to gain and or maintain control of inland water ways, adjoining rivers, coastal and the high sea.
+        - Integrate and employ ground, maritime, air and special operations forces to gain and or maintain control of inland water ways, adjoining rivers, coastal and the high sea.
 \n     
-        d. Detect,   intercept   and   interdict   hostile   actions   or   acts   that   tend   to undermine security of Nigeria in its AOR.
+        - Detect,   intercept   and   interdict   hostile   actions   or   acts   that   tend   to undermine security of Nigeria in its AOR.
 \n     
-        e.  Respond in aid to civil authority in terms of IS operations, humanitarian   relief  and Search and Rescue (SAR) amongst others.
+        -  Respond in aid to civil authority in terms of IS operations, humanitarian   relief  and Search and Rescue (SAR) amongst others.
 \n     
-        f. Conduct   of   exercises   and   on-the-job-training   of   personnel   towards attaining desirable operational efficiency. 
+        - Conduct   of   exercises   and   on-the-job-training   of   personnel   towards attaining desirable operational efficiency. 
 \n     
-        g. Perform any other duties as may be assigned from time to time by Appropriate Superior Authority.`,
+        - Perform any other duties as may be assigned from time to time by Appropriate Superior Authority.`,
       },
       {
         id: 2,
         header: "OBJECTIVES OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
         text: `
-                a. Development and review of doctrines for NN operations.
+                - Development and review of doctrines for NN operations.
                 \n
-                b. Assessment of compliance with HSE standards in commands, ships and
+                - Assessment of compliance with HSE standards in commands, ships and
                 establishments.
                 \n
-                c. Assessment of training curriculum including post course evaluation in NN professional schools.
+                - Assessment of training curriculum including post course evaluation in NN professional schools.
                 \n
-                d. Development and implementation of methodologies for assessment of NN operations.
+                - Development and implementation of methodologies for assessment of NN operations.
                 \n
-                e. Assessment of combat readiness of ships/units through work-up, Basic Operational Sea Training (BOST), Safety Operational Sea Training (SOST) and Consolidated Operational Sea Training (COST).
+                - Assessment of combat readiness of ships/units through work-up, Basic Operational Sea Training (BOST), Safety Operational Sea Training (SOST) and Consolidated Operational Sea Training (COST).
                 \n
-                f. Liaison with sister Services and friendly navies on development of joint and combined doctrines.
+                - Liaison with sister Services and friendly navies on development of joint and combined doctrines.
                 \n
-                g. Providing advice to NHQ on technology acquisition and local capacity building.
+                - Providing advice to NHQ on technology acquisition and local capacity building.
                 \n
-                h. Coordination/collaboration with other maritime stakeholders to develop and implement a National Maritime Doctrine.
+                - Coordination/collaboration with other maritime stakeholders to develop and implement a National Maritime Doctrine.
                 \n
-                i. Publication of books, manuals and BRs relevant to NN operations.
+                - Publication of books, manuals and BRs relevant to NN operations.
                 \n
-                j. Maintenance of archive and library for preserving records and NN historical development.
+                - Maintenance of archive and library for preserving records and NN historical development.
                 \n
-                k. Exam, Higher Rate Professional Exam and any other exam as may be directed.
+                - Exam, Higher Rate Professional Exam and any other exam as may be directed.
                 \n
-                l. Conduct research on doctrine concept and policy in naval engineering, logistics, administration, training and operations among others.
+                - Conduct research on doctrine concept and policy in naval engineering, logistics, administration, training and operations among others.
                 \n
-                m. Conduct research on applications for system development for operational efficiency.
+                - Conduct research on applications for system development for operational efficiency.
 
         `,
       },
@@ -173,62 +173,62 @@ export const centralData = [
         id: 4,
         header: "OBJECTIVES OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
         text: `
-                a. Executing NN policies for acquisition and maintenance of capital assets.
+                - Executing NN policies for acquisition and maintenance of capital assets.
                 \n
-                b. Establishing and monitoring repair and maintenance procedures, schedules, and standards including maintenance of ships, aircraft, and fixed assets, local and foreign refits of ships. 
+                - Establishing and monitoring repair and maintenance procedures, schedules, and standards including maintenance of ships, aircraft, and fixed assets, local and foreign refits of ships. 
                 \n
-                c. Ensuring the application of naval engineering standards to processes related to maintenance of ships and equipment in the NN. 
+                - Ensuring the application of naval engineering standards to processes related to maintenance of ships and equipment in the NN. 
                 \n
-                d. Identification of local capabilities in support of maintenance tasks, capital projects, and materiel supply. 
+                - Identification of local capabilities in support of maintenance tasks, capital projects, and materiel supply. 
                 \n
-                e. Conduct periodic inspections of all fleet maintenance assets and logistics infrastructure. 
+                - Conduct periodic inspections of all fleet maintenance assets and logistics infrastructure. 
                 \n
-                f. Undertake NN acquisitions as directed by the NHQ. 
+                - Undertake NN acquisitions as directed by the NHQ. 
                 \n
-                g. Procure, store, and distribute technical and naval stores material. Establish and monitor naval material supply procedures, schedules, and standards including periodicity of returns and quality management. 
+                - Procure, store, and distribute technical and naval stores material. Establish and monitor naval material supply procedures, schedules, and standards including periodicity of returns and quality management. 
                 \n
-                h. Monitor and assist operational commands in respect of first and second level maintenance and supply activities. 
+                - Monitor and assist operational commands in respect of first and second level maintenance and supply activities. 
                 \n
-                i. Provide storage and tests facilities for POL and all types of lubricants. Ensure the conduct of tests and compliance with safety regulations. 
+                - Provide storage and tests facilities for POL and all types of lubricants. Ensure the conduct of tests and compliance with safety regulations. 
                 \n
-                j. Accord operational requirements. 
+                - Accord operational requirements. 
                 \n
-                k. Preserve obsolete naval assets and equipment for later disposal action as may be directed. 
+                - Preserve obsolete naval assets and equipment for later disposal action as may be directed. 
                 \n
-                l. Carry out such other duties and directives as may be given by the NLC.
+                - Carry out such other duties and directives as may be given by the NLC.
 
         `,
       },
       {
         id: 5,
         header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
-        text: `a. To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
+        text: `- To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
 \n
-        b. To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.
+        - To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.
 \n
-        c. To   establish   and   constantly   update   training   standard compatible with operational performance standards of the Navy.
+        - To   establish   and   constantly   update   training   standard compatible with operational performance standards of the Navy.
 \n
-        d. To monitor training standards in the Navy by establishing an appropriate feedback system.
+        - To monitor training standards in the Navy by establishing an appropriate feedback system.
 \n
-        e. To   produce,   review   and   update   training   syllabi,   BRS, handouts and related materials for use in specified area of Naval Training and Training Establishment.
+        - To   produce,   review   and   update   training   syllabi,   BRS, handouts and related materials for use in specified area of Naval Training and Training Establishment.
 \n
-        f. To develop and impart training on Instructional Technique to officers and men appointed as Instructors.
+        - To develop and impart training on Instructional Technique to officers and men appointed as Instructors.
 \n
-        g. To develop and suitable training aids and equipment’s.
+        - To develop and suitable training aids and equipment’s.
 \n
-        h. To establish and execute ships’ BOST, SOST and COST progammes as directed by NHQ from time to time.
+        - To establish and execute ships’ BOST, SOST and COST progammes as directed by NHQ from time to time.
 \n
-        i. To   formulate   fleet   operational   training   concepts   and tactical doctrines for approval by NHQ.
+        - To   formulate   fleet   operational   training   concepts   and tactical doctrines for approval by NHQ.
 \n      
-        j. To conduct cadet and sea training 
+        - To conduct cadet and sea training 
 \n      
-        k. To organize workshop, seminare, symposia and lectures on training concepts and tactical doctrines as directed by NHQ.
+        - To organize workshop, seminare, symposia and lectures on training concepts and tactical doctrines as directed by NHQ.
 \n      
-        l. To   establish   training   programs   and   routines   in schools/ships as appropriate 
+        - To   establish   training   programs   and   routines   in schools/ships as appropriate 
 \n      
-        m. To administer two disciplines of Staff and Trainees in Training Schools/Training Establishments and training ships.
+        - To administer two disciplines of Staff and Trainees in Training Schools/Training Establishments and training ships.
 \n      
-        n. To   coordinate   the   preparation   of   Training   Budgets   by Training Established and training ships.`,
+        - To   coordinate   the   preparation   of   Training   Budgets   by Training Established and training ships.`,
       },
     ],
     aor: [
@@ -240,11 +240,11 @@ export const centralData = [
 \n\n
                 Consequent upon the delineation of CNC, the NNOI is hereby amended and the new AOR for WNC and ENC are defined as follows and as shown at Annex A:
 \n
-                a. WNC. The coastal limits of the WAC AOR shall stretch from the maritime border with the Republic of Benin and encompass Lagos, Ogun and Ondo States up to an area before the river Benin entrance at Longitude 0050 00' E. Within these limits, the seaward AOR shall stretch up to the extent of the nation's EEZ.
+                - WNC. The coastal limits of the WAC AOR shall stretch from the maritime border with the Republic of Benin and encompass Lagos, Ogun and Ondo States up to an area before the river Benin entrance at Longitude 0050 00' E. Within these limits, the seaward AOR shall stretch up to the extent of the nation's EEZ.
 \n
-                b. ENC. The coastal limits of the ENC AOR shall stretch from the maritime border with the Republic of Cameroun and encompass Cross River, Akwa-lbom and Rivers States up to the River Santa Barbara entrance at Longitude 0060 30' E. Within these limits, the seaward AOR shall stretch up to the extent of the nation's EEZ, subject to boundary delimitation agreements with neighboring states.
+                - ENC. The coastal limits of the ENC AOR shall stretch from the maritime border with the Republic of Cameroun and encompass Cross River, Akwa-lbom and Rivers States up to the River Santa Barbara entrance at Longitude 0060 30' E. Within these limits, the seaward AOR shall stretch up to the extent of the nation's EEZ, subject to boundary delimitation agreements with neighboring states.
 \n
-                c. Change of Operational Control. NN ships transiting through or deployed to or from CNC AOR are to CHOP to appropriate operational command on crossing Longitude 0050 00'E or Longitude 0060 30'E.
+                - Change of Operational Control. NN ships transiting through or deployed to or from CNC AOR are to CHOP to appropriate operational command on crossing Longitude 0050 00'E or Longitude 0060 30'E.
 
 
 
@@ -287,17 +287,17 @@ export const centralData = [
 \n\n
         [in addition, the following shall be established for the Command:
 \n
-        a. CNC Headquarters at Brass.
+        - CNC Headquarters at Brass.
 \n
-        b. Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
+        - Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
 \n
-        c. Operational Base at Yenagoa or Brass.
+        - Operational Base at Yenagoa or Brass.
 \n
-        d. Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
+        - Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
 \n
-        e. Squadron size Special Boat Service.
+        - Squadron size Special Boat Service.
 \n
-        f. Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
+        - Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
 
         `,
       },
@@ -305,32 +305,32 @@ export const centralData = [
         id: 2,
         header: "OBJECTIVES OF THE NIGERIAN NAVAL DOCTRINE COMMAND",
         text: `
-                a. Development and review of doctrines for NN operations.
+                - Development and review of doctrines for NN operations.
                 \n
-                b. Assessment of compliance with HSE standards in commands, ships and
+                - Assessment of compliance with HSE standards in commands, ships and
                 establishments.
                 \n
-                c. Assessment of training curriculum including post course evaluation in NN professional schools.
+                - Assessment of training curriculum including post course evaluation in NN professional schools.
                 \n
-                d. Development and implementation of methodologies for assessment of NN operations.
+                - Development and implementation of methodologies for assessment of NN operations.
                 \n
-                e. Assessment of combat readiness of ships/units through work-up, Basic Operational Sea Training (BOST), Safety Operational Sea Training (SOST) and Consolidated Operational Sea Training (COST).
+                - Assessment of combat readiness of ships/units through work-up, Basic Operational Sea Training (BOST), Safety Operational Sea Training (SOST) and Consolidated Operational Sea Training (COST).
                 \n
-                f. Liaison with sister Services and friendly navies on development of joint and combined doctrines.
+                - Liaison with sister Services and friendly navies on development of joint and combined doctrines.
                 \n
-                g. Providing advice to NHQ on technology acquisition and local capacity building.
+                - Providing advice to NHQ on technology acquisition and local capacity building.
                 \n
-                h. Coordination/collaboration with other maritime stakeholders to develop and implement a National Maritime Doctrine.
+                - Coordination/collaboration with other maritime stakeholders to develop and implement a National Maritime Doctrine.
                 \n
-                i. Publication of books, manuals and BRs relevant to NN operations.
+                - Publication of books, manuals and BRs relevant to NN operations.
                 \n
-                j. Maintenance of archive and library for preserving records and NN historical development.
+                - Maintenance of archive and library for preserving records and NN historical development.
                 \n
-                k. Exam, Higher Rate Professional Exam and any other exam as may be directed.
+                - Exam, Higher Rate Professional Exam and any other exam as may be directed.
                 \n
-                l. Conduct research on doctrine concept and policy in naval engineering, logistics, administration, training and operations among others.
+                - Conduct research on doctrine concept and policy in naval engineering, logistics, administration, training and operations among others.
                 \n
-                m. Conduct research on applications for system development for operational efficiency.
+                - Conduct research on applications for system development for operational efficiency.
 
         `,
       },
@@ -412,17 +412,17 @@ export const centralData = [
 \n\n
         [in addition, the following shall be established for the Command:
 \n
-        a. CNC Headquarters at Brass.
+        - CNC Headquarters at Brass.
 \n
-        b. Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
+        - Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
 \n
-        c. Operational Base at Yenagoa or Brass.
+        - Operational Base at Yenagoa or Brass.
 \n
-        d. Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
+        - Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
 \n
-        e. Squadron size Special Boat Service.
+        - Squadron size Special Boat Service.
 \n
-        f. Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
+        - Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
 
         `,
       },
@@ -433,23 +433,23 @@ export const centralData = [
                 
                 The NAVDOC shall be headed by a Flag Officer Commanding who shall be of the establishment rank of Rear Admiral and assisted by the Chief Staff Officer. In addition to the Director Simulation Centre who shall be of the establishment rank of Rear Admiral, other Principal Staff Officers in HQ NAVDOC with establishment ranks of Commodore are:
         \n
-        a. Command Doctrine and Assessment Officer.
+        - Command Doctrine and Assessment Officer.
         \n
-        b. Command Combat Readiness Officer.
+        - Command Combat Readiness Officer.
         \n
-        c. Command Manuals and Publications Officer.
+        - Command Manuals and Publications Officer.
         \n
-        d. Command Administrative Officer.
+        - Command Administrative Officer.
         \n
-        e. Command Transformation Officer.
+        - Command Transformation Officer.
         \n
-        f. Command Health Safety and Environment Officer.
+        - Command Health Safety and Environment Officer.
         \n
-        g. Command Accounts and Budget Officer.
+        - Command Accounts and Budget Officer.
         \n
-        h. Command Logistics Officer.
+        - Command Logistics Officer.
         \n
-        i. Command Research and Development Officer.
+        - Command Research and Development Officer.
         \n
         \n
 
@@ -467,25 +467,25 @@ export const centralData = [
         text: `
         The NNLC will be headed by a Seaman/Engineer/Logistic officer who   is   responsible   to   the   CNS   and   will   be   assisted   by   the following principal staff officers: Chief Staff Officer (X, Engr, Log). 
         \n\n
-        a. Command Administrative Officer (X). 
+        - Command Administrative Officer (X). 
         \n
-        b. Command Fleet Maintenance Officer (Engr). 
+        - Command Fleet Maintenance Officer (Engr). 
         \n
-        c. Command Technical Officer (Engr). 
+        - Command Technical Officer (Engr). 
         \n
-        d. Command Planning & Inspection Officer (Engr). 
+        - Command Planning & Inspection Officer (Engr). 
         \n
-        e. Command Project Officer (Engr/Log). 
+        - Command Project Officer (Engr/Log). 
         \n
-        f. Command Materiel Officer (Engr/Log) 
+        - Command Materiel Officer (Engr/Log) 
         \n
-        g. Command Accounts and Budget Officer (4&B). 
+        - Command Accounts and Budget Officer (4&B). 
         \n
-        h. Command Intelligence Officer [(X/Engr/Log (INT)]. 
+        - Command Intelligence Officer [(X/Engr/Log (INT)]. 
         \n
-        i. Command Medical Officer (Med). 
+        - Command Medical Officer (Med). 
         \n
-        j. Command Provost Marsha [X/Log (Provost)] 
+        - Command Provost Marsha [X/Log (Provost)] 
         \n\n
         The organizational structure: of the NNLC is at Annex A while the functions of departments and the schedule of duty of each principal staff officer are spelt out in Annexes B and C respectively. 
 
@@ -583,17 +583,17 @@ export const centralData = [
 \n\n
         [in addition, the following shall be established for the Command:
 \n
-        a. CNC Headquarters at Brass.
+        - CNC Headquarters at Brass.
 \n
-        b. Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
+        - Central Naval Fleet to be made up of a Central Fleet Headquarters at Brass, including ships, boats and aircraft as assigned by the Naval Headquarters.
 \n
-        c. Operational Base at Yenagoa or Brass.
+        - Operational Base at Yenagoa or Brass.
 \n
-        d. Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
+        - Central Fleet Support Group with Fleet Support Units and Fleet Support Elements to be administered by the Logistics Command.
 \n
-        e. Squadron size Special Boat Service.
+        - Squadron size Special Boat Service.
 \n
-        f. Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
+        - Naval Air Station at Yenagoa and Warri with a Flying Unit at Brass. Barracks, hospitals, schools and other welfare support facilities as determined by the Naval Headquarters.
 
         `,
       },
@@ -616,62 +616,62 @@ The FOC NAVDOC shall be responsible to the Chief of the Naval Staff for the day-
         id: 4,
         header: "OBJECTIVES OF THE NIGERIAN NAVAL LOGISTICS COMMAND ",
         text: `
-                a. Executing NN policies for acquisition and maintenance of capital assets.
+                - Executing NN policies for acquisition and maintenance of capital assets.
                 \n
-                b. Establishing and monitoring repair and maintenance procedures, schedules, and standards including maintenance of ships, aircraft, and fixed assets, local and foreign refits of ships. 
+                - Establishing and monitoring repair and maintenance procedures, schedules, and standards including maintenance of ships, aircraft, and fixed assets, local and foreign refits of ships. 
                 \n
-                c. Ensuring the application of naval engineering standards to processes related to maintenance of ships and equipment in the NN. 
+                - Ensuring the application of naval engineering standards to processes related to maintenance of ships and equipment in the NN. 
                 \n
-                d. Identification of local capabilities in support of maintenance tasks, capital projects, and materiel supply. 
+                - Identification of local capabilities in support of maintenance tasks, capital projects, and materiel supply. 
                 \n
-                e. Conduct periodic inspections of all fleet maintenance assets and logistics infrastructure. 
+                - Conduct periodic inspections of all fleet maintenance assets and logistics infrastructure. 
                 \n
-                f. Undertake NN acquisitions as directed by the NHQ. 
+                - Undertake NN acquisitions as directed by the NHQ. 
                 \n
-                g. Procure, store, and distribute technical and naval stores material. Establish and monitor naval material supply procedures, schedules, and standards including periodicity of returns and quality management. 
+                - Procure, store, and distribute technical and naval stores material. Establish and monitor naval material supply procedures, schedules, and standards including periodicity of returns and quality management. 
                 \n
-                h. Monitor and assist operational commands in respect of first and second level maintenance and supply activities. 
+                - Monitor and assist operational commands in respect of first and second level maintenance and supply activities. 
                 \n
-                i. Provide storage and tests facilities for POL and all types of lubricants. Ensure the conduct of tests and compliance with safety regulations. 
+                - Provide storage and tests facilities for POL and all types of lubricants. Ensure the conduct of tests and compliance with safety regulations. 
                 \n
-                j. Accord operational requirements. 
+                - Accord operational requirements. 
                 \n
-                k. Preserve obsolete naval assets and equipment for later disposal action as may be directed. 
+                - Preserve obsolete naval assets and equipment for later disposal action as may be directed. 
                 \n
-                l. Carry out such other duties and directives as may be given by the NLC.
+                - Carry out such other duties and directives as may be given by the NLC.
 
         `,
       },
       {
         id: 5,
         header: "OBJECTIVES OF THE NIGERIAN NAVY TRAINING BASE",
-        text: `a. To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
+        text: `- To establish and define scope, type and concept of naval basic   and   professional   training,   including   afloat   training   of Cadate and Midshipman.
 \n
-        b. To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.
+        - To   project   all   logistic   items   (equipment,   uniform   etc.) necessary for proper training.
 \n
-        c. To   establish   and   constantly   update   training   standard compatible with operational performance standards of the Navy.
+        - To   establish   and   constantly   update   training   standard compatible with operational performance standards of the Navy.
 \n
-        d. To monitor training standards in the Navy by establishing an appropriate feedback system.
+        - To monitor training standards in the Navy by establishing an appropriate feedback system.
 \n
-        e. To   produce,   review   and   update   training   syllabi,   BRS, handouts and related materials for use in specified area of Naval Training and Training Establishment.
+        - To   produce,   review   and   update   training   syllabi,   BRS, handouts and related materials for use in specified area of Naval Training and Training Establishment.
 \n
-        f. To develop and impart training on Instructional Technique to officers and men appointed as Instructors.
+        - To develop and impart training on Instructional Technique to officers and men appointed as Instructors.
 \n
-        g. To develop and suitable training aids and equipment’s.
+        - To develop and suitable training aids and equipment’s.
 \n
-        h. To establish and execute ships’ BOST, SOST and COST progammes as directed by NHQ from time to time.
+        - To establish and execute ships’ BOST, SOST and COST progammes as directed by NHQ from time to time.
 \n
-        i. To   formulate   fleet   operational   training   concepts   and tactical doctrines for approval by NHQ.
+        - To   formulate   fleet   operational   training   concepts   and tactical doctrines for approval by NHQ.
 \n      
-        j. To conduct cadet and sea training 
+        - To conduct cadet and sea training 
 \n      
-        k. To organize workshop, seminare, symposia and lectures on training concepts and tactical doctrines as directed by NHQ.
+        - To organize workshop, seminare, symposia and lectures on training concepts and tactical doctrines as directed by NHQ.
 \n      
-        l. To   establish   training   programs   and   routines   in schools/ships as appropriate 
+        - To   establish   training   programs   and   routines   in schools/ships as appropriate 
 \n      
-        m. To administer two disciplines of Staff and Trainees in Training Schools/Training Establishments and training ships.
+        - To administer two disciplines of Staff and Trainees in Training Schools/Training Establishments and training ships.
 \n      
-        n. To   coordinate   the   preparation   of   Training   Budgets   by Training Established and training ships.`,
+        - To   coordinate   the   preparation   of   Training   Budgets   by Training Established and training ships.`,
       },
     ],
     flagsPage: [

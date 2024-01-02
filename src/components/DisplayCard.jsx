@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import central from "../assets/central.svg";
 import nignavy from "../assets/nignavy.svg";
 import western from "../assets/western.svg";
+import quorra from "../assets/quorra.png";
 import logistic from "../assets/logistic.svg";
 import training from "../assets/training.svg";
 import { Box, Typography } from "@mui/material";
@@ -77,7 +78,7 @@ const data = [
   },
   {
     id: 3,
-    front: western,
+    front: quorra,
     lowerText: "Nigerian Naval Ship Quorra",
     height: "8.875rem",
     width: "7.375rem",
