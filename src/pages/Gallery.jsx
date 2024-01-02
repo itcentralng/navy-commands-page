@@ -107,7 +107,7 @@ const Gallery = () => {
                   />
                 ))}
               </Box> */}
-              <Box sx={{}}>
+              <Box sx={{ marginTop: "6em" }}>
                 <ThumbnailsExample />
               </Box>
             </motion.div>

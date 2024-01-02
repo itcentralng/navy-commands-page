@@ -68,7 +68,9 @@ const HeroPage = () => {
                   fontFamily: "ManropeSemiBold",
                 }}
               >
-                “From successful maritime operations to humanitarian missions, our naval forces continue to uphold the highest standards of professionalism and excellence."
+                “From successful maritime operations to humanitarian missions,
+                our naval forces continue to uphold the highest standards of
+                professionalism and excellence."
               </Typography>
             </Box>
 
@@ -84,7 +86,10 @@ const HeroPage = () => {
             >
               <Box
                 sx={{
-                  width: "90%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "95%",
                 }}
               >
                 <DisplayCard />

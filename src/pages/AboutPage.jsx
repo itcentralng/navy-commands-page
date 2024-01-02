@@ -72,7 +72,7 @@ const AboutPage = () => {
                 sx={{
                   color: "#fff",
                   fontSize: "4.375rem",
-                  width: "60%",
+                  width: "800px",
                   textTransform: "uppercase",
                   fontFamily: "Perpetua Light",
                 }}
@@ -87,7 +87,7 @@ const AboutPage = () => {
             </Box>
             <Box
               sx={{
-                width: "97%",
+                width: "1300px",
                 height: "50vh",
                 overflow: "auto",
                 scrollbarWidth: "thin", // For Firefox

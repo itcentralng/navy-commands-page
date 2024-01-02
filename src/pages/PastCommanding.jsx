@@ -104,7 +104,7 @@ const PastCommanding = () => {
                   />
                 </Box> */}
 
-                <div className="container">
+                <div className="container" style={{ marginTop: "6em" }}>
                   <Swiper
                     effect={"coverflow"}
                     grabCursor={true}

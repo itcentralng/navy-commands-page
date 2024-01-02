@@ -10,7 +10,9 @@ import { motion } from "framer-motion";
 const FlagsPage = () => {
   const { id } = useParams();
 
-  const selectedItem = centralData[0]?.flagsPage.find((item) => item.id === Number(id));
+  const selectedItem = centralData[0]?.flagsPage.find(
+    (item) => item.id === Number(id)
+  );
 
   if (!selectedItem) {
     // Handle the case where the item is not found
@@ -24,7 +26,12 @@ const FlagsPage = () => {
       >
         <SideBar></SideBar>
         <DetailsHeader></DetailsHeader>
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1, ease: "easeIn" }}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+        >
           <BackButton />
         </motion.div>
       </Box>
@@ -89,7 +96,11 @@ const FlagsPage = () => {
                         textAlign: "center",
                       }}
                     >
-                      <img src={selectedItem.image1} alt="" />
+                      <img
+                        src={selectedItem.image1}
+                        alt=""
+                        style={{ width: "80px" }}
+                      />
                       <Typography
                         variant="body2"
                         sx={{
@@ -134,7 +145,11 @@ const FlagsPage = () => {
                         textAlign: "center",
                       }}
                     >
-                      <img src={selectedItem.image2} alt="" />
+                      <img
+                        src={selectedItem.image2}
+                        alt=""
+                        style={{ width: "75px" }}
+                      />
                       <Typography
                         variant="body2"
                         sx={{

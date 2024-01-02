@@ -5,6 +5,7 @@ import western from "../assets/western.svg";
 import quorra from "../assets/quorra.png";
 import logistic from "../assets/logistic.svg";
 import training from "../assets/training.svg";
+import eastern from "../assets/eastern.svg";
 import { Box, Typography } from "@mui/material";
 
 const DisplayCard = () => {
@@ -15,6 +16,7 @@ const DisplayCard = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          gap: 2,
         }}
       >
         {data.map((item) => (
@@ -72,7 +74,7 @@ const data = [
   {
     id: 2,
     front: nignavy,
-    lowerText: "Eastern Naval Command",
+    lowerText: "Navy Doctrine Command",
     height: "9.2105rem",
     width: "6.25rem",
   },
@@ -93,7 +95,21 @@ const data = [
   {
     id: 5,
     front: training,
-    lowerText: "Nigerian Navy Training Command",
+    lowerText: "Navy Training Command",
+    height: "9.1875rem",
+    width: "6.8125rem",
+  },
+  {
+    id: 6,
+    front: eastern,
+    lowerText: "Eastern Naval Command",
+    height: "9.1875rem",
+    width: "6.8125rem",
+  },
+  {
+    id: 7,
+    front: western,
+    lowerText: "Western Naval Command",
     height: "9.1875rem",
     width: "6.8125rem",
   },
