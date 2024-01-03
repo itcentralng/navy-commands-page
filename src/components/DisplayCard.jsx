@@ -81,7 +81,7 @@ const data = [
   {
     id: 3,
     front: quorra,
-    lowerText: "Nigerian Naval Ship Quorra",
+    lowerText: "Naval Ship Quorra",
     height: "8.875rem",
     width: "7.375rem",
   },
